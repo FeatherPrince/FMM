@@ -1,0 +1,2 @@
+ZZZ	= "countries/ZZZ.txt"
+ZZX	= "countries/ZZX.txt"

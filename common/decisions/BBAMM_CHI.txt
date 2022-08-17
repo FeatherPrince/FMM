@@ -1,0 +1,204 @@
+CHI_yellow_river = {
+	
+	CHI_flood_the_yellow_river = {
+
+		icon = CHI_yellow_river_flooded
+
+		allowed = {
+			tag = CHI
+		}
+
+		available = {
+			has_war = yes
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		highlight_states = {
+			highlight_state_targets = {  }
+			highlight_provinces = {  }
+		}
+
+		modifier = {
+		}
+
+		visible = {
+			NOT = { has_global_flag = CHI_yellow_river_flooded }
+            tag = CHI
+		}
+
+		remove_effect = {
+
+			597 = {
+				add_province_modifier = {
+					static_modifiers = { flooded }
+					province = {
+						id = 12093
+						id = 1084
+						id = 7189
+						id = 7160
+						id = 9987
+						id = 11933
+						id = 12069
+						id = 10072
+						id = 1069
+						id = 10102
+						id = 4089
+					}
+				}
+				damage_building = {
+				    type = infrastructure
+				    damage = 2
+				}
+				damage_building = {
+				    type = industrial_complex
+				    damage = 0.5
+				}
+				damage_building = {
+				    type = arms_factory
+				    damage = 0.5
+				}
+			}
+			607 = {
+				add_province_modifier = {
+					static_modifiers = { flooded }
+					province = {
+						id = 7129
+						id = 7656
+						id = 9958
+						id = 1004
+						id = 11931
+						id = 4606
+						id = 1139
+						id = 4114
+					}
+				}
+				damage_building = {
+				    type = infrastructure
+				    damage = 3
+				}
+				damage_building = {
+				    type = industrial_complex
+				    damage = 1.5
+				}
+				damage_building = {
+				    type = arms_factory
+				    damage = 1.5
+				}
+			}
+			set_global_flag = CHI_yellow_river_flooded
+		}
+
+		complete_effect = {
+		}
+
+	}
+
+	CHI_drain_the_water_lines = {
+
+		icon = CHI_drain_water_lines
+
+		allowed = {
+			tag = CHI
+		}
+
+		available = {
+			7 = { is_fully_controlled_by = ROOT }
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		highlight_states = {
+			highlight_state_targets = { state = 7 }
+			highlight_provinces = {
+				9498
+				391
+				11456
+				6241
+			}
+		}
+		
+		modifier = {
+		}
+
+		visible = {
+			7 = { is_fully_controlled_by = ROOT }
+			has_global_flag = CHI_yellow_river_flooded
+		}
+
+		remove_effect = {
+			597 = {
+				remove_province_modifier = {
+					static_modifiers = { flooded }
+					province = {
+						id = 12093
+						id = 1084
+						id = 7189
+						id = 7160
+						id = 9987
+						id = 11933
+						id = 12069
+						id = 10072
+						id = 1069
+						id = 10102
+						id = 4089
+					}
+				}
+				damage_building = {
+				    type = infrastructure
+				    damage = 2
+				}
+				damage_building = {
+				    type = industrial_complex
+				    damage = 0.5
+				}
+				damage_building = {
+				    type = arms_factory
+				    damage = 0.5
+				}
+			}
+			607 = {
+				remove_province_modifier = {
+					static_modifiers = { flooded }
+					province = {
+						id = 7129
+						id = 7656
+						id = 9958
+						id = 1004
+						id = 11931
+						id = 4606
+						id = 1139
+						id = 4114
+					}
+				}
+				damage_building = {
+				    type = infrastructure
+				    damage = 3
+				}
+				damage_building = {
+				    type = industrial_complex
+				    damage = 1.5
+				}
+				damage_building = {
+				    type = arms_factory
+				    damage = 1.5
+				}
+			}
+			clr_global_flag = CHI_yellow_river_flooded
+		}
+
+		complete_effect = {
+			set_country_flag = { flag = CHI_draining_in_progress value = 1 days = 14 }
+		}
+
+	}
+
+}

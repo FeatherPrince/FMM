@@ -1,0 +1,39 @@
+
+state={
+	id=279
+	name="STATE_279" # Santiago
+	manpower = 1
+	
+	state_category = wasteland
+	
+	resources={
+		steel=16 # was: 24
+	}
+
+	history={
+		owner = ZZX
+		buildings = {
+			infrastructure = 3 #was: 5
+			8222 = {
+				naval_base = 5
+			}
+			5121 = {
+				naval_base = 1
+			}
+			650 = {
+				bunker = 1
+			}
+		}
+		add_core_of = ZZX
+		victory_points = {
+			650 10
+		}
+
+	}
+
+	provinces={
+		650 5121 5169 5191 8194 8222 8229 8251 12920 12954 12984 
+	}
+
+	local_supplies=0.0 
+}

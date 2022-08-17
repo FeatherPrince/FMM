@@ -328,6 +328,11 @@ XSM = {
 	color_ui = rgb { 105 90 132 }
 }
 
+LBA = {
+	color = rgb { 200 180 90 }
+	color_ui = rgb { 200 180 90 }
+}
+
 EGY = {
 	color = rgb { 230 230 70 }
 	color_ui = rgb { 230 230 70 }
@@ -809,4 +814,8 @@ MEL = {
 CHU = {
 	color = rgb { 191 128 64 }
 	color_ui = rgb { 134 89 45 }
+}
+ZZX = {
+	color = rgb { 104 152 83 }
+	color_ui = rgb { 135 198 108 }
 }

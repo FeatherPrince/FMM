@@ -1,0 +1,13 @@
+[06:25:11][virtualfilesystem_physfs.cpp:1248]: Could not open file: common/countries/ZZZ.txt, error: not found
+[06:40:07][ConsoleCmdImpl.cpp:5901]: ======== show errors from console ========
+
+
+
+
+
+
+
+
+
+
+

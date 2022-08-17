@@ -1,0 +1,12 @@
+CHI_yellow_river = {
+
+	icon = hol_prepare_the_inundation_lines
+	
+	allowed = {
+		original_tag = CHI
+	}
+
+	visible = {
+		original_tag = CHI
+	}
+}

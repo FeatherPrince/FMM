@@ -1,0 +1,32 @@
+state=
+{
+	id=318
+	name="STATE_318"
+	manpower = 1
+	
+	state_category = wasteland
+	
+	resources={
+		chromium=2 # was: 3
+	}
+	history=
+	{
+		owner = ZZX
+		buildings = {
+			infrastructure = 2
+			4641 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = ZZX
+		victory_points = {
+			4641 5 
+		}
+
+	}
+	provinces={
+		1594 1635 4641
+	}
+
+	local_supplies=0.0 
+}

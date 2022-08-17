@@ -88,25 +88,25 @@ NDefines.NMilitary.MAX_NUM_TRAITS = -1;									-- cant have more; -1 to disable
 
 --													NPolitics
 
-NDefines.NPolitics.BASE_LEADER_TRAITS = 3;								-- Base amount of leader traits.
-NDefines.NPolitics.MAX_RANDOM_LEADERS = 1;								-- Maximum amount random leader to have per party.
-NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2;					-- Weekly increase of PP.
-NDefines.NPolitics.ARMY_LEADER_COST = 5;								-- command power cost for recruiting new leaders; 'this value' * number_of_existing_leaders_of_type
-NDefines.NPolitics.NAVY_LEADER_COST = 5;								-- command power cost for recruiting new leaders; 'this value' * number_of_existing_leaders_of_type
-NDefines.NPolitics.ARMY_LEADER_MAX_COST = 50;							-- max cost BEFORE modifiers
-NDefines.NPolitics.NAVY_LEADER_MAX_COST = 50;							-- max cost BEFORE modifiers
-NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.00;						-- Amount of XP a trait needs to be shown in tooltips of a leader.
-NDefines.NPolitics.REVOLTER_PARTY_POPULARITY = 0.4;						-- Revolter party loses 80% popularity when the civil war breaks out
-NDefines.NPolitics.MIN_OVERTHROWN_GOVERNMENT_SUPPORT_RATIO = 0.4;		-- Min possible support for new government after puppeting the government
-NDefines.NPolitics.NUM_OCCUPATION_POLICIES = 4;							-- Number of potential occupation policies
-NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 1;						-- Defaullt value for occupation policy
-NDefines.NPolitics.INSTANT_WIN_REVOLTER_POPULARITY_RATIO = 0.4;			-- Min party popularity for instant win in one province state
-NDefines.NPolitics.INSTANT_WIN_POPULARITY_WIN = 50;						-- New party popularity
+NDefines.NPolitics.BASE_LEADER_TRAITS = 3;											-- Base amount of leader traits.
+NDefines.NPolitics.MAX_RANDOM_LEADERS = 1;											-- Maximum amount random leader to have per party.
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2;								-- Weekly increase of PP.
+NDefines.NPolitics.ARMY_LEADER_COST = 5;											-- command power cost for recruiting new leaders; 'this value' * number_of_existing_leaders_of_type
+NDefines.NPolitics.NAVY_LEADER_COST = 5;											-- command power cost for recruiting new leaders; 'this value' * number_of_existing_leaders_of_type
+NDefines.NPolitics.ARMY_LEADER_MAX_COST = 50;										-- max cost BEFORE modifiers
+NDefines.NPolitics.NAVY_LEADER_MAX_COST = 50;										-- max cost BEFORE modifiers
+NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.00;									-- Amount of XP a trait needs to be shown in tooltips of a leader.
+NDefines.NPolitics.REVOLTER_PARTY_POPULARITY = 0.4;									-- Revolter party loses 80% popularity when the civil war breaks out
+NDefines.NPolitics.MIN_OVERTHROWN_GOVERNMENT_SUPPORT_RATIO = 0.4;					-- Min possible support for new government after puppeting the government
+NDefines.NPolitics.NUM_OCCUPATION_POLICIES = 4;										-- Number of potential occupation policies
+NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 1;									-- Defaullt value for occupation policy
+NDefines.NPolitics.INSTANT_WIN_REVOLTER_POPULARITY_RATIO = 0.4;						-- Min party popularity for instant win in one province state
+NDefines.NPolitics.INSTANT_WIN_POPULARITY_WIN = 50;									-- New party popularity
 
 --													NProduction
 
-NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 3; 						-- Max number of different strategic resources an equipment can be dependent on.
-NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 15;						-- Max number of factories that can be assigned a single production line.
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 3; 								-- Max number of different strategic resources an equipment can be dependent on.
+NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 20;								-- Max number of factories that can be assigned a single production line.
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 5;						--Default = 10	|	Amount of dockyards you can assigh to non capital ships
 NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 5;				--Default = 5	|	Amount of dockyards you can assigh to floating harbots
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 15;						--Default = 15	|	Amount of dockyards you can assigh to convoys
@@ -167,6 +167,28 @@ NDefines.NProduction.SHIP_REFIT_DAMAGE_TO_PROGRESS_FACTOR = 0.5;					-- When a s
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = 0;				--Default = -0.5	|	compliance factor that applies when the state controller changes (in between allies, compliance is zeroed if it is taken by original country)
 
-NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0.0; 	--each percent of collaboration will lower surrender limit by this percentage
-NDefines.NCountry.SURRENDER_RECIPIENT_SCORE_PER_COLLABORATION = 1.0; 	--countries with collaboration will get bonus while game calculates which country the enemy will capitulate
-NDefines.NCountry.COMPLIANCE_PER_COLLABORATION = 1.0;					--each percent of collaboration will be converted to this compliance at capitulation
+NDefines.NCountry.STATE_VALUE_NON_CORE_STATE_FRACTION = 1.0;						-- If a state is not a core we assume we will get 50% of the factory slots
+NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0.0; 				-- each percent of collaboration will lower surrender limit by this percentage
+NDefines.NCountry.SURRENDER_RECIPIENT_SCORE_PER_COLLABORATION = 1.0; 				-- countries with collaboration will get bonus while game calculates which country the enemy will capitulate
+NDefines.NCountry.COMPLIANCE_PER_COLLABORATION = 1.0;								-- each percent of collaboration will be converted to this compliance at capitulation
+
+
+NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 5.0;								-- How much air superiority reduction to the enemy does our AA guns? Normally each building level = -1 reduction. With this multiplier.
+NDefines.NBuildings.MAX_BUILDING_LEVELS = 15;										-- Max levels a building can have.
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 200;									-- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
+NDefines.NBuildings.ROCKETSITE_CAPACITY_MULT = 100;									-- Each level of rocketsite building multiplied by this, gives capacity (max operational value). Value is int. 1 for each rocket.
+NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.05;									-- Each level of navalbase building repairs X strength and can repair as many ships as its level
+NDefines.NBuildings.RADAR_RANGE_BASE = 20;											-- Radar range base, first level radar will be this + min, best radar will be this + max
+NDefines.NBuildings.RADAR_RANGE_MIN = 20;											-- Radar range (from state center to province center) in measure of map pixels. Exluding techs.
+NDefines.NBuildings.RADAR_RANGE_MAX = 200;											-- Range is interpolated between building levels 1-15.
+NDefines.NBuildings.RADAR_INTEL_EFFECT = 40;										-- Province covered by radar increases intel by 10 (where 255 is max). Province may be covered by multiple radars, then the value sums up.
+NDefines.NBuildings.SABOTAGE_FACTORY_DAMAGE = 100.0;								-- How much damage takes a factory building in sabotage when state is occupied. Damage is mult by (1 + resistance strength), i.e. up to 2 x base value.
+NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.3;										-- Default repair rate before factories are taken into account
+NDefines.NBuildings.BASE_FACTORY_REPAIR_FACTOR = 2.0;								-- Factory speed modifier when repairing.
+NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 3;								-- supply throughput per level of naval base
+NDefines.NBuildings.MAX_SHARED_SLOTS = 25;											-- Max slots shared by factories
+NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 2.0;					-- Scale factor of extra shared slots when state owner change.
+NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR = 30;								-- Number of days cooldown between removal of buildings in war timesNDefines.NBuildings.
+NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.2;							-- multiplicative resource bonus for each level of (non damaged) infrastructure
+NDefines.NBuildings.SUPPLY_ROUTE_RESOURCE_BONUS = 0.2;								-- multiplicative resource bonus for having a railway/naval connection to the capital
+NDefines.NBuildings.INFRASTRUCTURE_MUD_EFFECT = -0.8; 								-- multiplicative effect on mud growth for max infra
