@@ -1,0 +1,14 @@
+--NDefines.NPolitics.BASE_LEADER_TRAITS = 3;							-- Base amount of leader traits.
+--NDefines.NPolitics.MAX_RANDOM_LEADERS = 1;							-- Maximum amount random leader to have per party.
+--NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2;					-- Weekly increase of PP.
+--NDefines.NPolitics.ARMY_LEADER_COST = 5;								-- command power cost for recruiting new leaders; 'this value' * number_of_existing_leaders_of_type
+--NDefines.NPolitics.NAVY_LEADER_COST = 5;								-- command power cost for recruiting new leaders; 'this value' * number_of_existing_leaders_of_type
+NDefines.NPolitics.ARMY_LEADER_MAX_COST = 50;							--default 100--max cost BEFORE modifiers
+NDefines.NPolitics.NAVY_LEADER_MAX_COST = 50;							--default 100--max cost BEFORE modifiers
+NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.00;						--default 0.05--Amount of XP a trait needs to be shown in tooltips of a leader.
+--NDefines.NPolitics.REVOLTER_PARTY_POPULARITY = 0.4;					-- Revolter party loses 80% popularity when the civil war breaks out
+--NDefines.NPolitics.MIN_OVERTHROWN_GOVERNMENT_SUPPORT_RATIO = 0.4;		-- Min possible support for new government after puppeting the government
+--NDefines.NPolitics.NUM_OCCUPATION_POLICIES = 4;						-- Number of potential occupation policies
+--NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 1;						-- Defaullt value for occupation policy
+--NDefines.NPolitics.INSTANT_WIN_REVOLTER_POPULARITY_RATIO = 0.4;		-- Min party popularity for instant win in one province state
+--NDefines.NPolitics.INSTANT_WIN_POPULARITY_WIN = 50;					-- New party popularity

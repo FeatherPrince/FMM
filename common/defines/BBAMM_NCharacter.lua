@@ -1,0 +1,12 @@
+--NDefines.NCharacter.OFFICER_CORP_ADVISOR_ENTRIES_IN_MENU = { "high_command", "theorist", "army_chief", "air_chief", "navy_chief" };
+--NDefines.NCharacter.OFFICER_CORP_HIGH_COMMAND_SLOTS_IN_MENU = 3; 				--For Alert manager to count the number of High Command Slots in the UI
+NDefines.NCharacter.DEFAULT_PP_COST_FOR_MILITARY_ADVISOR = 50;				-- When an advisor does not have cost assigned this is the default used
+NDefines.NCharacter.DEFAULT_PP_COST_FOR_POLITICAL_ADVISOR = 150;					--default 150
+--NDefines.NCharacter.DEFAULT_CP_COST_FOR_ADVISOR = 0;							-- For Starting Advisors
+--NDefines.NCharacter.DEFAULT_CP_COST_FOR_DYNAMIC_ADVISORS = 0;					-- For Advisors created during gameplay
+--NDefines.NCharacter.ADVISOR_PROMOTION_COST = 5;								-- Cost to promote someone to advisor
+--NDefines.NCharacter.COUNTRY_LEADER_BASE_EXPIRE_YEAR_LENGTH = 5; 				-- When creating a dynamic country leader if an expire date is not set it will have 5 years as a base expiration date
+--NDefines.NCharacter.COUNTRY_LEADER_BASE_RANDOM_MAX_YEAR_LENGTH = 15;			-- Max random value added to COUNTRY_LEADER_BASE_EXPIRE_YEAR_LENGTH
+NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2;		--default 4
+NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4;			--default 6
+NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 6;			--default 8

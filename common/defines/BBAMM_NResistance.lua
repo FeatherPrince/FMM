@@ -1,0 +1,96 @@
+--NDefines.NResistance.INITIAL_STATE_RESISTANCE = 1.0;							-- initial resistance percentage of a state once it is captured
+--NDefines.NResistance.INITIAL_STATE_COMPLIANCE = 0.0;							-- initial compliance percentage of a state once it is captured
+NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = 0.0;	--default -0.5-- compliance factor that applies when the state controller changes (in between allies; compliance is zeroed if it is taken by original country)
+--NDefines.NResistance.RESISTANCE_COOLDOWN_WHEN_DISABLED = -0.25;				-- resistance cooldown when the state is taken back by its original owner (compliance is zeroed in that case)
+
+--NDefines.NResistance.RESISTANCE_TARGET_BASE = 35.0;							-- base resistance target percentage
+
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_HAS_CLAIM = -5.0;			-- resistance target modifier in % for states we have claim
+
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_PER_STABILITY_LOSS = 0.2;	-- resistance target modifier per stability below 100%
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_PER_COMPLIANCE = -0.5;		-- resistance target modifier per compliance %
+
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_IS_AT_PEACE = -10.0;			-- resistance target modifier when we are at peace
+
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_STATE_VP = {					-- resistance target modifier pairs for vp. first entry is total vp in state and second entry is amount of target modifier that applies for that threshold
+--	0;   0.0; -- 0 - 5
+--	5;   5.0; -- 5 - 20
+--	20;  10.0; -- 20 - 50
+--	50;  20.0; -- 50 - ...
+--};
+
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_OCCUPIED_CAPITULATED = 10.0; -- resistance target modifier when the enemy is capitulated
+
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MIN = 2.0;   -- min & max resistance target modifier resistance target modifier for exile countries. interpolated using legitimacy
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE_MAX = 20.0;
+
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_POP_LOW = -20.0;			-- how much we reduce the resistance target
+--NDefines.NResistance.RESISTANCE_TARGET_MODIFIER_POP_VERY_LOW = -50.0;			-- resistance target modifier in % for states we have claim
+--
+--NDefines.NResistance.RESISTANCE_POP_LOW_CUTOFF = 10000;
+--NDefines.NResistance.RESISTANCE_POP_VERY_LOW_CUTOFF = 1000;
+--
+--NDefines.NResistance.RESISTANCE_TARGET_MIN_CAP_FOR_NON_COMPLIANCE = 10; -- min resistance target will be capped to this percentage for non-compliance sources
+--
+--NDefines.NResistance.RESISTANCE_DECAY_BASE = 0.1; -- base resistance decay
+--NDefines.NResistance.RESISTANCE_DECAY_MIN = 0.01; -- min resistance decay
+--NDefines.NResistance.RESISTANCE_DECAY_MAX = 100.0; -- nax resistance decay
+--
+--NDefines.NResistance.RESISTANCE_DECAY_MODIFIER_HAS_CLAIM = 25.0; -- resistance decay modifier for our claims
+--NDefines.NResistance.RESISTANCE_DECAY_MODIFIER_FACTORS = {  -- resistance decay modifier when resistance hits a certain percentage
+--	10; -50; -- below 10% it has a -50% modifier on decay
+--	20; -25; -- below 20% it has a -25% modifier on decay
+--};
+--
+--NDefines.NResistance.MIN_DAMAGE_TO_GARRISONS_MODIFIER = 0.1; -- modifier that applies to losses from resistance attack to garrisons at most can be reduced to this amount
+--
+--NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.2; -- base resistance grow
+--NDefines.NResistance.RESISTANCE_GROWTH_MIN = 0.01; -- min resistance grow
+--NDefines.NResistance.RESISTANCE_GROWTH_MAX = 100.0; -- max resistance grow
+--
+--NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.075; -- base compliance grow
+--NDefines.NResistance.COMPLIANCE_GROWTH_MIN = -100.0; -- min compliance grow
+--NDefines.NResistance.COMPLIANCE_GROWTH_MAX = 100.0; -- max compliance grow
+--
+--NDefines.NResistance.COMPLIANCE_GROWTH_IS_AT_PEACE = 10; -- compliance growth buff at peace
+--NDefines.NResistance.COMPLIANCE_GROWTH_HAS_CLAIM = 5; -- compliance growth buff if state has a claim
+--
+--NDefines.NResistance.COMPLIANCE_DECAY_AT_MAX_COMPLIANCE = -0.083; -- as compliance increases; it gets a decay rate depending on its value. compliance should stabilize at some value until its growth changes
+--NDefines.NResistance.COMPLIANCE_DECAY_PER_EXILE_LEGITIMACY = -0.015; -- higher legitimacy will give higher decay to compliance
+--
+--NDefines.NResistance.RESISTANCE_RATIO_DIFF_TO_SPREAD = 0.5; -- resistance diff between two neighbour states will spread by this ratio ( from highest resistance states to lower ones and it will only spread once to a state)
+--
+--NDefines.NResistance.RESISTANCE_ACTIVITY_CHANCE_AT_MAX_RESISTANCE = 0.312;
+--NDefines.NResistance.RESISTANCE_ACTIVITY_MIN_GARRISON_PENETRATE_CHANCE = 0.02;
+--
+--NDefines.NResistance.RESISTANCE_TARGET_TO_REENABLE_RESISTANCE = 10; -- resistance will be disabled once it reaches zero and will not be reenabled until resistance target reaches above this value
+--NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 12;
+--
+--NDefines.NResistance.NO_COMPLIANCE_GAIN_ENABLE_LIMIT = 0.5; -- at least this ratio of no garrison law should be active in order to no compliance gain to take effect
+--
+--NDefines.NResistance.GARRISON_MANPOWER_MIN_DELIVERY_SPEED = 0.7;	-- Minimum base delivery speed if the chunk can't be calculated.
+--NDefines.NResistance.GARRISON_MANPOWER_REINFORCEMENT_SPEED = 2000.0;	-- Modifier for garrison manpower reinforcement.  This value is the maximum to be delivered which is then modified by distance
+--NDefines.NResistance.GARRISON_EQUIPMENT_DELIVERY_SPEED = 4.0;	-- Modifier for garrison equipment reinforcement speed
+--
+--NDefines.NResistance.GARRISON_STR_POW_MANPOWER = 2;	--Scales impact of manpower deficiency by raising that deficiency to the number here. Formula: efficiency = 1.0 - manpower_deficiency^GARRISON_STR_POW_MANPOWER
+--NDefines.NResistance.GARRISON_STR_POW_EQUIPMENT = 3;	--Scales impact of euqipment deficiency by raising that deficiency to the number here. Formula: efficiency = 1.0 - equipment_deficiency^GARRISON_STR_POW_EQUIPMENT
+--
+--NDefines.NResistance.SUPPRESSION_NEEDED_BY_RESISTANCE_POINT = 0.75; -- Number of suppression point we need for each 1% of resistance
+--NDefines.NResistance.SUPPRESSION_NEEDED_LOWER_CAP = 10.0;	-- if resistance is lower than this value then we always act as though it is at the define for the purpose of suppresion requirements
+--NDefines.NResistance.SUPPRESSION_NEEDED_UPPER_CAP = 50.0; -- if resistance is greater than this value then we always act as though it is at the define for the purpose of suppresion requirements
+--
+--NDefines.NResistance.GARRISON_MANPOWER_LOST_BY_ATTACK = 0.018; 	-- Ratio of manpower lost by garrison at each attack on garrison (this number will be reduced by the hardness of garrison template)
+--NDefines.NResistance.GARRISON_EQUIPMENT_LOST_BY_ATTACK = 0.02; 	-- Ratio of equipment lost by garrison at each attack on garrison (this number will be reduced by the hardness of garrison template)
+--NDefines.NResistance.MAXIMUM_GARRISON_HARDNESS_WHEN_ATTACKED = 0.90;   -- Cap to be sure that garrison will suffer lost in attack; even with a almost 100% hardness
+--
+--NDefines.NResistance.FOREIGN_MANPOWER_MIN_THRESHOLD = 5000;		 -- The minimum number of Manpower that AI will accept to give at once; in order to avoid many weird little transfer.
+--NDefines.NResistance.MANPOWER_BUFFER_TO_NOT_GIVE_MINOR = 0.3; -- To determine how much AI can give as foreign manpower; we calculate how much manpower we use; and add this buffer. The result is what we want to keep; for minor countries. So higher this number is; lower we will give Manpower.
+--NDefines.NResistance.MANPOWER_BUFFER_TO_NOT_GIVE_MAJOR = 0.6; -- To determine how much AI can give as foreign manpower; we calculate how much manpower we use; and add this buffer. The result is what we want to keep; for major countries. So higher this number is; lower we will give Manpower.
+--NDefines.NResistance.MAX_GARRISON_RATIO_WE_AGREE_TO_SUPPORT = 3.0;	-- The part of the manpower needed by the foreign garrison; that AI will agree to support with our manpower. If negative number; AI will not take into consideration the need; and just calculate how much they can give.
+--NDefines.NResistance.FOREIGN_MANPOWER_AI_COOLDOWN_DAYS = 30;		 -- Number of days after an AI give us manpower before the AI accept to give more.
+--
+--NDefines.NResistance.INITIAL_HISTORY_RESISTANCE = 0.0;			-- resistance value for initial colony states
+--NDefines.NResistance.INITIAL_HISTORY_COMPLIANCE = 70.0;			-- compliance value for initial colony states
+--NDefines.NResistance.INITIAL_GARRISON_STRENGTH = 1;				-- garrison value for initial colony states
+--
+--NDefines.NResistance.STATE_COMPLIANCE_DECAY_FOR_LOST_STATES = 0.05; -- daily compliance decay for the states you lost control of

@@ -1,0 +1,45 @@
+ideas = {
+	country = {
+		AI_CAP_LIMIT = {
+
+			name = "Death before dishonor"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+#			picture = 
+
+			modifier = {
+				surrender_limit = 0.2
+			}
+		}
+
+		DEN_cowardice = {
+
+			name = "Danish Cowardice"
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+#			picture = 
+
+			modifier = {
+				surrender_limit = -1.0
+			}
+		}
+	}
+}

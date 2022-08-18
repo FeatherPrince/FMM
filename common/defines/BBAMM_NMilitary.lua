@@ -1,0 +1,401 @@
+--NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 1;										-- Multiplier on TotalOrganisation when determining the combat value of a division
+--NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 1;										-- Multiplier on TotalStrength when determining the combat value of a division
+
+--NDefines.NMilitary.SOFT_ATTACK_TARGETING_FACTOR = 1.0;									-- How much we care about potential soft attacks when evaluating priority combat target
+--NDefines.NMilitary.HARD_ATTACK_TARGETING_FACTOR = 1.2;									-- How much we care about potential hard attacks when evaluating priority combat target
+
+--NDefines.NMilitary.USE_MULTIPLICATIVE_ORG_LOSS_WHEN_MOVING = true;						-- whether to apply org_loss_when_moving modifiers additively or multiplicatively (hardcoded multiplicative pre-2021)
+--NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.2;										-- how much org is lost every hour while moving an army.
+--NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.8;										-- speed impact at 0 org.
+--NDefines.NMilitary.INFRA_ORG_IMPACT = 0.5;												-- scale factor of infra on org regain.
+--NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 2.0;										-- how much enemy combat width we are allowed to engage per width of our own
+
+--NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.05;							-- speed penalty per infrastucture below maximum.
+
+--NDefines.NMilitary.WAR_SCORE_LOSSES_RATIO = 0.1;											-- Scale how much losses will affect warscore ( per 1000 losses ).
+--NDefines.NMilitary.WAR_SCORE_LOSSES_MULT_IF_CAPITULATED = 0.5;							-- How much your losses count towards warscore if you have capitulated.
+--NDefines.NMilitary.WAR_SCORE_AIR_WORTH = 0.05;											-- how much strategic bombing will affect warscore
+--NDefines.NMilitary.WAR_SCORE_AIR_WORTH_CAP = 1000;										-- the warscore limit we get from strategic bombing
+--NDefines.NMilitary.WAR_SCORE_AIR_MONTHLY_FALLOFF = 10;									-- how much the warscore we got from the strategic bombing falls off every month.
+
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 30;										--default 24	-- how many divisions a corps commander is limited to. 0 = inf; < 0 = blocked
+--NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 8;												--how many battalions should a division have to count as a full divisions when calculating XP stuff
+--NDefines.NMilitary.CORPS_COMMANDER_ARMIES_CAP = -1;										-- how many armies a corps commander is limited to. 0 = inf; < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 30;										--default 24	-- how many divisions a field marshall is limited to. 0 = inf; < 0 = blocked
+--NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5;											-- how many armies a field marshall is limited to. 0 = inf; < 0 = blocked
+
+--NDefines.NMilitary.UNIT_LEADER_GENERATION_CAPITAL_CONTINENT_FACTOR = 100;					--Integer factor to multiply manpower.
+
+--NDefines.NMilitary.RECON_SKILL_IMPACT = 5; 												-- how many skillpoints is a recon advantage worth when picking a tactic.
+
+--NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5;										-- Max width of regiments in division designer.
+--NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 5;										-- Max height of regiments in division designer.
+--NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 1;										-- Max width of support in division designer.
+--NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5;										-- Max height of support in division designer.
+
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0; 									--default 20	--Base cost to unlock a regiment slot;
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 2;									--default 5	--Base cost to change a regiment column.
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 2; 									--default 10	--Base cost to unlock a support slot
+
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999;												--default 500	--Max army experience a country can store
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999;												--default 500	--Max navy experience a country can store
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999;												--default 500	--Max air experience a country can store
+--		
+--NDefines.NMilitary.COMBAT_MINIMUM_TIME = 4;												-- Shortest time possible for a combat in hours
+--NDefines.NMilitary.SPOTTING_QUALITY_DROP_HOURS = 4;										-- Each X hours the intel quality drops after unit was spotted.
+--NDefines.NMilitary.LEADER_GROUP_MAX_SIZE = 1000; --5;										-- Max slots for leader groups.
+--		
+--NDefines.NMilitary.MIN_SUPPLY_CONSUMPTION = 0.05;											-- minimum value of supply consumption that a unit can get
+--					
+--NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4;											-- nr of damage dice
+--NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2;											-- nr of damage dice
+--NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.05;								-- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+--NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.053;								-- global damage modifier
+--NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04;							-- air global damage modifier
+--NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.04;							-- global damage modifier
+--NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 3;						-- how many CAS/TAC can enter a combat depending on enemy width there
+--NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2;							-- extra damage dice if our armor outclasses enemy
+--NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 6;							-- extra damage dice if our armor outclasses enemy
+--NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.5;							-- damage reduction if armor outclassing enemy
+--NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5;							-- damage reduction if armor outclassing enemy
+--NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FORT_FACTOR = 0.005;							-- Factor to scale collateral damage to forts with.
+--NDefines.NMilitary.LAND_COMBAT_COLLATERAL_INFRA_FACTOR = 0.0022;							-- Factor to scale collateral damage to infra with.
+--NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 5;									-- chance to get a hit to damage on forts. (out of 100)
+--NDefines.NMilitary.ATTRITION_DAMAGE_ORG = 0.08;											-- damage from attrition to Organisation
+--NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.1;									-- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+--NDefines.NMilitary.ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.1;						-- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+--NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 1;		
+--NDefines.NMilitary.RELIABILITY_ORG_REGAIN = -0.3;											-- how much reliability affects org regain
+--NDefines.NMilitary.RELIABILITY_ORG_MOVING = -1.0;											-- how much reliability affects org loss on moving
+--NDefines.NMilitary.RELIABILITY_WEATHER = 3.0;												-- how much reliability is afffecting weather impact
+--NDefines.NMilitary.RELIABILTY_RECOVERY = 0.1;												-- factor affecting how much equipment is returned "from the dead"
+--NDefines.NMilitary.BASE_CHANCE_TO_AVOID_HIT = 90;											-- Base chance to avoid hit if defences left.
+--NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60;									-- chance to avoid hit if no defences left.
+--NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.33;											-- speed reduction base modifier in combat
+--NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 12;											-- hours between tactic swaps
+--NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 5;					-- Which level a field marhal or general has to be before they can pick their preferred tactic
+--NDefines.NMilitary.COUNTRY_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.25;							-- extra weight multiplier for the country preferred tactic when doing weighted random
+--NDefines.NMilitary.ARMY_GENERAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.5;						-- extra weight multiplier for the army general preferred tactic when doing weighted random
+--NDefines.NMilitary.FIELD_MARSHAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.25;					-- extra weight multiplier for the field marhsal preferred tactic when doing weighted random
+NDefines.NMilitary.PREFERRED_TACTIC_COMMAND_POWER_COST = 0;									--default 20-- command point cost for changing preferred tactic
+--NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 0.35;						-- advantage per leader level for picking a counter
+--NDefines.NMilitary.AMPHIBIOUS_INVADE_MOVEMENT_COST = 24.0;								-- total progress cost of movement while amphibious invading
+--NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.05;											-- basic speed control
+--NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.3;											-- small river crossing
+--NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.6;									-- large river crossing
+--NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.25;									-- small river crossing
+--NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.5;								-- large river crossing
+--NDefines.NMilitary.RIVER_SMALL_START_INDEX = 0;											-- color indices for rivers
+--NDefines.NMilitary.RIVER_SMALL_STOP_INDEX = 6;						
+--NDefines.NMilitary.RIVER_LARGE_STOP_INDEX = 11;						
+--NDefines.NMilitary.BASE_FORT_PENALTY = -0.15;												-- fort penalty
+--NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.5;										-- defender penalty if attacked from multiple directions
+--NDefines.NMilitary.DIG_IN_FACTOR = 0.02;													-- bonus factor for each dug-in level
+--NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.1; 							-- XP gain per unit in combat
+--NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.5;			-- if there are multiple leaders in same combat; each one gets thisratio + (1-thisratio)/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
+--NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.45;										-- Base xp gain for traits per hour for armies
+--NDefines.NMilitary.MAX_NUM_TRAITS = -1;													-- cant have more; -1 to disable
+--NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35;									-- effect on defense due to enemy air superiorty
+--NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70;									-- more AA attack will approach this amount of help (diminishing returns)
+--NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 112;							-- how quickly defense approaches the max impact diminishing returns curve
+--NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3;								-- effect on speed due to enemy air superiority
+--						
+--NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.07;									-- Balancing value to determine the chance of ground AA hitting an attacking airplane; affecting both the effective average damage done by AA to airplanes; and the reduction of damage done by airplanes due to AA support
+--NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005;										-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+--						
+--NDefines.NMilitary.ENCIRCLED_PENALTY = -0.3;                      						-- penalty when completely encircled
+--NDefines.NMilitary.WARSCORE_WINNER_FACTOR = 1;											-- Warscore effect on winners
+--NDefines.NMilitary.WARSCORE_DEFENDER_FACTOR = 0.3;										-- Warscore effect on defender
+--NDefines.NMilitary.WARSCORE_LOSS_FACTOR = 0.2;											-- Warscore effect on losing
+--NDefines.NMilitary.WARSCORE_TOTAL_FACTOR = 3;												-- Warscore balancing value
+--NDefines.NMilitary.WARSCORE_PROVINCE_FACTOR = 0.2;										-- Warscore effect from province
+--NDefines.NMilitary.WARSCORE_MIN_HOURS = 48;												-- minimum hours
+--NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0001;
+--NDefines.NMilitary.UNIT_EXPERIENCE_SCALE = 1.0;
+--NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015;
+--NDefines.NMilitary.TRAINING_MAX_LEVEL = 2;
+--NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 1;
+--NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 62.0;
+--NDefines.NMilitary.TRAINING_ORG = 0.2;
+--NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 1;
+--NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.75, 0.9 };								-- Experience needed to progress to the next level
+--NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.0015;					
+--NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 1.2;									-- Most xp you can gain per day
+--NDefines.NMilitary.EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 0.3;							-- reduction factor in Xp from expeditionary forces
+--NDefines.NMilitary.LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.0005;							-- Experience scale for lend leased equipment used in combat.
+--NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 1.0;					
+--NDefines.NMilitary.SLOWEST_SPEED = 4;					
+--NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 14;							-- Every X days the equipment will be sent; regardless if still didn't produced all that has been requested.
+--NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 7;								-- How many days must pass until we may give another reinforcement request
+--NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.25;					
+--NDefines.NMilitary.UNIT_DIGIN_CAP = 5;													-- how "deep" you can dig you can dig in until hitting max bonus
+--NDefines.NMilitary.UNIT_DIGIN_SPEED = 1;													-- how "deep" you can dig a day.
+--NDefines.NMilitary.PARACHUTE_FAILED_EQUIPMENT_DIV = 50.0;									-- When the transport plane was shot down; we drop unit with almost NONE equipment
+--NDefines.NMilitary.PARACHUTE_FAILED_MANPOWER_DIV = 100.0;									-- When the transport plane was shot down; we drop unit with almost NONE manpower
+--NDefines.NMilitary.PARACHUTE_FAILED_STR_DIV = 10.0;										-- When the transport plane was shot down; we drop unit with almost NONE strenght
+--NDefines.NMilitary.PARACHUTE_DISRUPTED_EQUIPMENT_DIV = 1.5;								-- When the transport plane was hit; we drop unit with reduced equipment. Penalty is higher as more hits was received (and AA guns was in the state).
+--NDefines.NMilitary.PARACHUTE_DISRUPTED_MANPOWER_DIV = 1.9;								-- When the transport plane was hit; we drop unit with reduced manpower. Penalty is higher as more hits was received (and AA guns was in the state).
+--NDefines.NMilitary.PARACHUTE_DISRUPTED_STR_DIV = 2.2;										-- When the transport plane was hit; we drop unit with reduced strength. Penalty is higher as more hits was received (and AA guns was in the state).
+--NDefines.NMilitary.PARACHUTE_PENALTY_RANDOMNESS = 0.1;									-- Random factor for str;manpower;eq penalties.
+--NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 1;									-- How much the Air defence in the state (from AA buildings level * air_defence) is scaled to affect overall disruption (equipment;manpower;str).
+--NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.1;											-- Organisation value (in %) after unit being dropped; regardless if failed; disrupted; or successful.
+--NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 120;							-- penalty in org regain after being parachuted. Value is in hours.
+--NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.8;								-- penalty to org regain after being parachuted.
+--NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.2;									-- Base org regain per hour
+--NDefines.NMilitary.BASE_NIGHT_ATTACK_PENALTY = -0.5;
+--NDefines.NMilitary.EXILE_EQUIPMENT = 1.0;													-- Amount of equipment to keep
+--NDefines.NMilitary.EXILE_ORG = 0.0;														-- Amount of org to keep
+--NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 1.00;											-- percentage of experienced solders who die when manpower is removed
+--NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.68;									-- % of equipment lost to strength ratio in combat; so some % is returned if below 1
+--NDefines.NMilitary.SUPPLY_USE_FACTOR_MOVING = 1.5;										-- Deprecated/Unused
+--NDefines.NMilitary.SUPPLY_USE_FACTOR_INACTIVE = 0.95;										-- Deprecated/Unused
+--NDefines.NMilitary.SUPPLY_GRACE = 72;														-- troops always carry 3 days of food and supply
+--NDefines.NMilitary.SUPPLY_GRACE_MAX_REDUCE_PER_HOUR = 2;									-- supply grace is not decreased instantly when it is buffed temporarily and buff is removed
+--NDefines.NMilitary.SUPPLY_ORG_MAX_CAP = 0.30;												-- Max organization is factored by this if completely out of supply
+--NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 30;											-- how many days of shitty supply until max penalty achieved
+--NDefines.NMilitary.OUT_OF_SUPPLY_ATTRITION = 0.20;										-- max attrition when out of supply
+--NDefines.NMilitary.OUT_OF_SUPPLY_SPEED = -0.8;											-- max speed reduction from supply
+--NDefines.NMilitary.NON_CORE_SUPPLY_SPEED = -0.5;											-- we are not running on our own VP supply so need to steal stuff along the way
+--NDefines.NMilitary.NON_CORE_SUPPLY_AIR_SPEED = -0.25;										-- we are not running on our own VP supply so need to steal stuff along the way; a bit less due to air supply
+--NDefines.NMilitary.OUT_OF_SUPPLY_MORALE = -0.2;											-- max org regain reduction from supply
+--NDefines.NMilitary.TRAINING_ATTRITION = 0.05;												-- amount of extra attrition from being in training
+--NDefines.NMilitary.TRAINING_MIN_STRENGTH = 0.1;											-- if strength is less than this; the unit will pause training until it's been reinforced
+--NDefines.NMilitary.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.08;									-- Maximum army XP gained per day from training
+--NDefines.NMilitary.AIR_SUPPORT_BASE = 0.25;												-- CAS bonus factor for air support moddifier for land unit in combat
+--NDefines.NMilitary.LOW_SUPPLY = 0.99;														-- When the supply status of an unit becomes low.
+--NDefines.NMilitary.BORDER_WAR_ATTRITION_FACTOR = 0.1;										-- How much of borderwar balance of power makes it into attrition
+--NDefines.NMilitary.BORDER_WAR_VICTORY = 0.8;												-- At wich border war balance of power is victory declared
+--NDefines.NMilitary.REINFORCE_CHANCE = 0.02;												-- base chance to join combat from back line when empty
+--NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.01;										-- chance to join combat bonus by each 100% larger than infantry base (up to 200%)
+--NDefines.NMilitary.OVERSEAS_LOSE_EQUIPMENT_FACTOR = 0.75;									-- percentage of equipment lost disbanded overseas
+--NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.2;								-- percentage of manpower returned when an encircled unit is disbanded
+--NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.2;										-- percentage of (max) org loss on takign enemy province
+--NDefines.NMilitary.LOW_ORG_FOR_ATTACK = 0.3;												-- at what org % we start affecting speed when doign hostile moves. scales down ZERO_ORG_MOVEMENT_MODIFIER
+--					
+--NDefines.NMilitary.PLANNING_DECAY = 0.01;					
+--NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.03;									-- Amount of planning lost due to player manual order
+--NDefines.NMilitary.PLANNING_GAIN = 0.02;					
+--NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_GAIN = 0.02;								-- Planning Bonus gain per day for naval invasions
+--NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -1;								-- Malus in percentage for the planning bonus gain for naval invasions
+--NDefines.NMilitary.PLANNING_MAX = 0.3;													-- can get more from techs
+--NDefines.NMilitary.CIVILWAR_ORGANIZATION_FACTOR = 0.3;									  	-- Multiplier of org for both sides when civilwar.
+--NDefines.NMilitary.PLAN_CONSIDERED_GOOD = 0.25;											-- Plan evaluations above this value are considered more or less safe
+--NDefines.NMilitary.PLAN_CONSIDERED_BAD = -0.25;											-- Plan evaluations below this value are considered unsafe
+--NDefines.NMilitary.PLAN_MIN_AUTOMATED_EMPTY_POCKET_SIZE = 2;								-- The battle plan system will only automatically attack provinces in pockets that has no resistance and are no bigger than these many provinces
+--NDefines.NMilitary.PLAN_SPREAD_ATTACK_WEIGHT = 13.0;										-- The higher the value; the less it should crowd provinces with multiple attacks.
+--NDefines.NMilitary.PLAN_NEIGHBORING_ENEMY_PROVINCE_FACTOR = 0.7;							-- When calculating the importance of provinces; it takes number of enemy provinces into account; factored by this
+--NDefines.NMilitary.PLAN_PROVINCE_BASE_IMPORTANCE = 2.0;									-- Used when calculating the calue of front and defense area provinces for the battle plan system
+--					
+--NDefines.NMilitary.PLAN_PROVINCE_LOW_VP_IMPORTANCE_AREA = 2.0;							-- Used when calculating the value of defense area in the battle plan system
+--NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_IMPORTANCE_AREA = 5.0;							-- Used when calculating the value of defense area in the battle plan system
+--NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_IMPORTANCE_AREA = 10.0;							-- Used when calculating the value of defense area in the battle plan system
+--NDefines.NMilitary.PLAN_PROVINCE_CAPITAL_IMPORTANCE_AREA = 50.0;							-- Used when calculating the balue of defense area in the battle plan system
+--NDefines.NMilitary.MIN_VP_NEEDED_FOR_DEFENSE_ORDER_ASSIGNMENTS = 1.0;						-- If a province has more than this VP; unit controller will try to assign units that prov
+--					
+--NDefines.NMilitary.PLAN_PROVINCE_LOW_VP_IMPORTANCE_FRONT = 2.0;							-- Used when calculating the calue of fronts in the battle plan system
+--NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_IMPORTANCE_FRONT = 2.25;						-- Used when calculating the calue of fronts in the battle plan system
+--NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_IMPORTANCE_FRONT = 2.75;							-- Used when calculating the calue of fronts in the battle plan system
+--					
+--NDefines.NMilitary.PLAN_SHARED_FRONT_PROV_IMPORTANCE_FACTOR = 0.8;						-- If fornt orders share end provinces; they should each have a somewhat reduced prio due to it being shared.
+--					
+--NDefines.NMilitary.PLAN_PORVINCE_PORT_BASE_IMPORTANCE = 12.0;								-- Added importance for area defense province with a port
+--NDefines.NMilitary.PLAN_PORVINCE_PORT_LEVEL_FACTOR = 1.5;									-- Bonus factor for port level
+--NDefines.NMilitary.PLAN_PORVINCE_AIRFIELD_BASE_IMPORTANCE = 3.0;							-- Added importance for area defense province with air field
+--NDefines.NMilitary.PLAN_PORVINCE_AIRFIELD_POPULATED_FACTOR = 1.5;							-- Bonus factor when an airfield has planes on it
+--NDefines.NMilitary.PLAN_PORVINCE_AIRFIELD_LEVEL_FACTOR = 0.25;							-- Bonus factor for airfield level
+--NDefines.NMilitary.PLAN_PORVINCE_RESISTANCE_BASE_IMPORTANCE = 10.0; 						-- Used when calculating the calue of defense area provinces for the battle plan system (factored by resistance level)
+--NDefines.NMilitary.PLAN_PROVINCE_VP_PORT_FACTOR = 0.25;
+--
+--NDefines.NMilitary.-- These need to result in province value > 1.0 for it to matter.
+--NDefines.NMilitary.PLAN_AREA_DEFENSE_ENEMY_CONTROLLER_SCORE = 25.0;						-- Score applied to provinces in the defense area order controlled by enemies
+--NDefines.NMilitary.PLAN_AREA_DEFENSE_ENEMY_UNIT_FACTOR = -2.0;							-- Factor applied to province score in area defense order per enemy unit in that province
+--NDefines.NMilitary.PLAN_AREA_DEFENSE_FORT_IMPORTANCE = 0.25;								-- Used when calculating the value of defense area provinces for the battle plan system; works as multipliers on the rest
+--NDefines.NMilitary.PLAN_AREA_DEFENSE_COASTAL_FORT_IMPORTANCE = 3.0;						-- Used when calculating the value of defense area provinces for the battle plan system
+--NDefines.NMilitary.PLAN_AREA_DEFENSE_COAST_NO_FORT_IMPORTANCE = 1.1;						-- Used when calculating the value of defense area provinces for the battle plan system
+--NDefines.NMilitary.PLAN_AREA_DEFENSE_HAS_RAIL_IMPORTANCE = 1.5;							-- Used when calculating the value of defense area provinces for the battle plan system
+--NDefines.NMilitary.PLAN_AREA_DEFENSE_HAS_SUPPLY_NODE = 20.0;								-- Used when calculating the value of defense area provinces for the battle plan system
+--				
+--NDefines.NMilitary.PLAN_STICKINESS_FACTOR = 100.0;										-- Factor used in unitcontroller when prioritizing units for locations
+--				
+--NDefines.NMilitary.PLAN_PROVINCE_PRIO_DISTRIBUTION_MIN = 0.7;								-- Lowest fraction of divisions that will be distributed based on province priority
+--NDefines.NMilitary.PLAN_PROVINCE_PRIO_DISTRIBUTION_MAX = 1.0;								-- Highest fraction of divisions that will be distributed based on province priority
+--NDefines.NMilitary.PLAN_PROVINCE_PRIO_DISTRIBUTION_DPP_HIGH = 3.0;						-- At what divisions per province should we use PLAN_PROVINCE_PRIO_DISTRIBUTION_MIN
+--NDefines.NMilitary.PLAN_PROVINCE_PRIO_DISTRIBUTION_DPP_LOW = 2.0;							-- At what divisions per province should we use PLAN_PROVINCE_PRIO_DISTRIBUTION_MAX
+--					
+--NDefines.NMilitary.PLAN_EXECUTE_CAREFUL_LIMIT = 25;										-- When looking for an attach target; this score limit is required in the battle plan to consider province for attack
+--NDefines.NMilitary.PLAN_EXECUTE_BALANCED_LIMIT = 0;										-- When looking for an attach target; this score limit is required in the battle plan to consider province for attack
+--NDefines.NMilitary.PLAN_EXECUTE_RUSH = -200;												-- When looking for an attach target; this score limit is required in the battle plan to consider province for attack
+--NDefines.NMilitary.PLAN_EXECUTE_CAREFUL_MAX_FORT = 5;										-- If execution mode is set to careful; units will not attack provinces with fort levels greater than or equal to this
+--
+--NDefines.NMilitary.-- order by EExecutionType: careful; balanced; rush; <skip>; weak rush
+--NDefines.NMilitary.PLAN_EXECUTE_SUPPLY_CHECK = { 1.0, 0.0, 0.0, 1.0, 0.0 };				-- for each execution mode how careful should we be with supply (1.0 means full required supply available; zero is no limit).
+--
+--NDefines.NMilitary.PLAN_MAX_PROGRESS_TO_JOIN = 0.50;										-- If Lower progress than this; probably needs support
+--					
+--NDefines.NMilitary.PLAN_BLITZ_OPTIMISM = 0.2;												-- Additional combat balance value in favor of blitzing side when considering targets (not a combat bonus; just offsets planning)
+--NDefines.NMilitary.MIN_BALANCE_SCORE_TO_PROCEED_ATTACK = 0.2;								--A combat balance score of less than this will prevent auto attacking
+--NDefines.NMilitary.DYNAMIC_MODIFIER_ATTACK_BIAS = 1.0;									--This factors the weighting bias of dynamic attack modifiers
+--					
+--NDefines.NMilitary.FLANKED_PROVINCES_COUNT = 3;											-- Attacker has to attack from that many provinces for the attack to be considered as flanking
+--NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.1;											-- Minimum damage from nukes as a percentage of current strength/organisation
+--NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 0.9;											-- Minimum damage from nukes as a percentage of current strength/organisation
+--NDefines.NMilitary.EQUIPMENT_REPLACEMENT_RATIO = 0.1;										-- Equipment min ratio after blocking the equipment type
+--NDefines.NMilitary.NUKE_DELAY_HOURS = 12;													-- How many hours does it take for the nuclear drop to happen
+--NDefines.NMilitary.PARADROP_PENALTY = -0.3; 												-- Combat penalty when recently paradropped
+--NDefines.NMilitary.PARADROP_HOURS = 48;													-- time paratroopers suffer penalties in combat
+--NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.20;							-- attack combat penalty for attacker if out of supply
+--NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.70;							-- defend combat penalty for attacker if out of supply
+--NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_ATTACK = -0.50;							-- attack combat penalty for defender if out of supply
+--NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.15;							-- defend combat penalty for defender if out of supply
+--NDefines.NMilitary.COMBAT_STACKING_START = 8;												-- at what nr of divisions stacking penalty starts
+--NDefines.NMilitary.COMBAT_STACKING_EXTRA = 4;												-- extra stacking from directions
+--NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.02;										-- how much stackign penalty per division
+--NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1.5;										-- over combat width penalty per %.
+--NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY_MAX = -0.33;									-- over combat width max (when you cant join no more).
+--NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.25;											-- speed bonus when retreating
+--NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.15;										-- speed bonus when withdrawing
+--NDefines.NMilitary.STRATEGIC_SPEED_INFRA_BASE = 5.0;										-- Base speed of strategic redeployment when not on railways
+--NDefines.NMilitary.STRATEGIC_SPEED_INFRA_MAX = 10.0;										-- Additional speed of strategic redeployment on max-level infrastructure
+--NDefines.NMilitary.STRATEGIC_SPEED_RAIL_BASE = 15.0;										-- Base speed of strategic redeployment when on railways
+--NDefines.NMilitary.STRATEGIC_SPEED_RAIL_MAX = 25.0; 										-- Additional speed of strategic redeployment on max-level railways
+--NDefines.NMilitary.STRATEGIC_REDEPLOY_ORG_RATIO = 0.1;									-- Ratio of max org while strategic redeployment
+--NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0;							-- Division experience drop if unit has same batalion
+--NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.5;								-- Division experience drop if unit has different batalion
+--NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.4;												-- how to weight in highest armor & pen vs the division average
+--NDefines.NMilitary.PEN_VS_AVERAGE = 0.4;				
+--				
+--NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 10;											-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
+--NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 5;				
+--NDefines.NMilitary.NAVAL_EQUIPMENT_BASE_COST = 25;				
+--NDefines.NMilitary.NAVAL_EQUIPMENT_RAMP_COST = 5;				
+--NDefines.NMilitary.AIR_EQUIPMENT_BASE_COST = 25;				
+--NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5;				
+--				
+--NDefines.NMilitary.FASTER_ORG_REGAIN_LEVEL = 0.25;				
+--NDefines.NMilitary.FASTER_ORG_REGAIN_MULT = 1.0;				
+--NDefines.NMilitary.SLOWER_ORG_REGAIN_LEVEL = 0.80;				
+--NDefines.NMilitary.SLOWER_ORG_REGAIN_MULT = -0.5;				
+--				
+--NDefines.NMilitary.DISBAND_MANPOWER_LOSS = 0.0;				
+--NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.2;								--Min level of division training
+--				
+--NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 8;										--If a units path is at least this long to reach its front location; it will strategically redeploy.
+--NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.25;								--scales initiative for reinforce chance
+--				
+--NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.0;									--after a successful land combat; ratio of the equipments that are being captured/salvaged from enemy's lost equipment
+--					
+--NDefines.NMilitary.ACCLIMATIZATION_IN_COMBAT_SPEED_FACTOR = 3;							--Acclimatization speed multiplier while being in combat.
+--NDefines.NMilitary.ACCLIMATIZATION_SPEED_GAIN = 0.15;										--A variable used to balance the overall speed of gaining the acclimatization
+--NDefines.NMilitary.ACCLIMATIZATION_LOSS_SPEED_FACTOR = 2.0;								--Loosing one acclimatization while being under affect of the opposite climate should cause it to drop down much faster than gaining.
+--					
+--					
+--NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 40.0;											--cost of promoting a leader
+--					
+--NDefines.NMilitary.FIELD_MARSHAL_ARMY_BONUS_RATIO = 0.5;									--ratio to apply regular bonuses FM bonuses to armies
+--					
+--NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.3;											--xp gain ratio for army group leaders
+--			
+--NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0;									--armies gets increased cap when they are garrisoned
+--					
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 3;										--default 3	-- num stats gained on level up
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {5, 5, 5, 5};							--default5, 5, 5, 5--level up stat random base weights attack; defense; planning; logistics
+					
+NDefines.NMilitary.NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {5, 5, 5, 5};						--default5, 5, 5, 5--level up stat random base weights attack; defense; maneuvering; coordination
+					
+NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = {										--trait slot for 0 level leader
+	0.0, -- field marshal						--default 1			
+	5.0, -- corps commander						--default 0			
+	5.0, -- navy general						--default 1			
+	0.0, -- operative			
+};			
+--			
+NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = {										--num extra traits on each level
+	1.0, -- field marshal						--default 0.5			
+	1.0, -- corps commander						--default 0.5			
+	1.0, -- navy general						--default 0.5			
+	0.0, -- operative			
+};			
+--			
+NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false;								--default true -- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
+--			
+--NDefines.NMilitary.HOURS_REQ_REJOIN_BORDER_WAR_FOR_INJURED_UNITS = 336;					--minimum hours required for units to rejoin border wars
+--			
+--NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = {						--chances to gain a personality trait for new generals
+--	0.5, -- 50% for first trait			
+--	0.15  -- 15% for second trait after that			
+--};			
+--			
+--NDefines.NMilitary.NEW_COMMANDER_RANDOM_BASIC_TRAIT_CHANCES = {							--chances to gain a basic trait for new generals
+--};			
+--			
+--NDefines.NMilitary.NEW_COMMANDER_RANDOM_STATUS_TRAIT_CHANCES = {							--chances to gain a status trait for new generals
+--};			
+--			
+--NDefines.NMilitary.NEW_OPERATIVE_RANDOM_PERSONALITY_TRAIT_CHANCES = {						--chances to gain a personality trait for new operatives
+--	0.5, -- 50% for first trait			
+--	0.1  -- 10% for second trait after that			
+--};			
+--			
+--NDefines.NMilitary.NEW_OPERATIVE_RANDOM_BASIC_TRAIT_CHANCES = {							--chances to gain a basic trait for new operatives
+--	0.25, -- 25% for first trait			
+--	0.05  -- 5% for second trait after that			
+--};			
+--			
+--NDefines.NMilitary.NEW_OPERATIVE_RANDOM_STATUS_TRAIT_CHANCES = {							--chances to gain a status trait for new operatives
+--};				
+--				
+--NDefines.NMilitary.NEW_COMMANDER_RANDOM_SKILL_CHANCES = {									--chances to give a random stat skill for new operatives
+--};				
+--				
+--NDefines.NMilitary.NEW_NAVY_LEADER_RANDOM_SKILL_CHANCES = {								--chances to give a random stat skill point for a new admiral
+--};			
+--			
+--NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 15;					--time in days for a unit leader to regain its modifiers
+NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 10;										--default 15 -- cost to assign a new trait to a unit leader
+--NDefines.NMilitary.ATTACHED_WINGS_ORDER_UPDATE_DAYS = 5;									--Days untill the attached wing will update the order
+--				
+--NDefines.NMilitary.BORDER_WAR_WIN_DAYS_AGAINST_EMPTY_OPPONENTS = 14;						--border wars will be automatically won if no opponent shows up for this duration
+--				
+--				
+--NDefines.NMilitary.MAX_RELATIVE_COMBAT_DAMAGE_TO_MODIFY_XP = 4.0;							--you gain more XP if you are doing more damage relative to enemy; this is the max relative amount to gain following RATe
+--NDefines.NMilitary.XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 4.0;					--XP factor scaling for max relative combat damage
+--				
+NDefines.NMilitary.XP_DECAY_RATE_PER_HOUR_IN_COMBAT = 0.0;									--default 0.0 -- you get reduced XP as combat drags
+NDefines.NMilitary.MIN_XP_RATE_TO_DECAY = 1;												--default 0.1 -- minimum XP factor for dragged combats
+--				
+--NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 35.0;										--fixed XP gain per overrun unit
+--NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 35.0;											--fixed XP gain per shattered unit
+--			
+--NDefines.NMilitary.UNIT_UPKEEP_ATTRITION = 0.00;											--onstant attrition value applied to armies.
+--			
+--NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0.25;										--ratio of fuel in an army to start getting penalties
+--			
+--NDefines.NMilitary.SURPLUS_SUPPLY_RATIO_FOR_ZERO_FUEL_FLOW = 0.5;							--if a supply chunk has more supply needed than this ratio + 1 compared to its max supply flow; the units inside the chiunk will get no fuel
+--			
+--NDefines.NMilitary.ARMY_MAX_FUEL_FLOW_MULT = 2.0;											--max fuel ratio that an army can get per hour; multiplied by supply situation
+--						
+--NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.5;												--fuel cost multiplier for all army related stuff
+--NDefines.NMilitary.ARMY_COMBAT_FUEL_MULT =   1.0;											--fuel consumption ratio in combat (plus ARMY_MOVEMENT_FUEL_MULT if you are also moving. ie offensive combat)
+--NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0;											--fuel consumption ratio while training
+--NDefines.NMilitary.ARMY_MOVEMENT_FUEL_MULT = 1.0;											--fuel consumption ratio while moving
+--NDefines.NMilitary.ARMY_NAVAL_TRANSFER_FUEL_MULT = 0.0;									--fuel consumption ratio while naval transferring
+--NDefines.NMilitary.ARMY_STRATEGIC_DEPLOYMENT_FUEL_MULT = 0.0;								--fuel consumption ratio while doing strategic deployment
+--NDefines.NMilitary.ARMY_IDLE_FUEL_MULT = 0.0;												--fuel consumption ratio while just existing
+--NDefines.NMilitary.FUEL_EFFICIENCY_RAID_MULTIPLIER = 1.0;									--convoy raid multiplier for fuel sunk
+--			
+--NDefines.NMilitary.FUEL_FLOW_PENALTY_FOR_SUPPLY_CHUNK_EDGE_RATIO = 0.5; 					--supply flow that is limited by control of incoming edge provinces will have lesser effect on fuel flow
+--			
+--NDefines.NMilitary.OUT_OF_FUEL_EQUIPMENT_MULT = 0.1;										--ratio of the stats that you get from equipments that uses fuel and you lack it
+--NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.4;											--speed mult that armies get when out of fuel
+--NDefines.NMilitary.OUT_OF_FUEL_TRAINING_XP_GAIN_MULT = 0.0;								--xp gain mult from training when a unit is out of fuel
+--NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 96;										--default capacity if not specified
+--				
+--NDefines.NMilitary.MAX_ESTIMATED_PLAN_UNITS_NOT_IN_PLACE_FACTOR = -0.6; 					--Scaled by % of units not in place. Used to be a flat -50%
+--NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.35;									--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
+--				
+--				
+--NDefines.NMilitary.NEW_ARMY_LEADER_LEVEL_CHANCES = {										--chances for new army leaders to start at a given level
+--0.95, -- 95% for level one
+--0.05  -- 5% for level two
+--	  -- 0% for level three to ten
+--}
