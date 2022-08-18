@@ -1,0 +1,38 @@
+﻿focus_tree = {
+	id = BBAMM_ZXX
+	
+	country = {
+		factor = 1
+		modifier = {
+			add = 10
+			tag = ZXX
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = ZXX_the_montreux_convention
+	}
+
+	focus = {
+		id = ZXX_the_montreux_convention
+		icon = GFX_focus_TUR_the_montreux_convention
+		available = {
+			original_tag = ZXX
+		}
+		x = 3
+		y = 0
+		cost = 10
+		ai_will_do = {
+			base = 10
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ENG = { country_event = { id = bftb_turkey.1 } }
+			custom_effect_tooltip = TUR_the_montreux_convention_tt
+		}
+	}
+}

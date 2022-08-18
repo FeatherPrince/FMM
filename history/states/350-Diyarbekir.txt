@@ -4,7 +4,7 @@ state={
 	name="STATE_350"
 
 	history={
-		owner = TUR
+		owner = ZXX
 		victory_points = {
 			4512 5 
 		}
@@ -16,17 +16,16 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			air_base = 2
 
 		}
-		add_core_of = TUR
+		add_core_of = ZXX
 	}
 
 	provinces={
 		4512 9823 11759 11871 12387 12416 
 	}
-	manpower=571935
-	state_category=town
+	manpower=1
+	state_category=wasteland
 
 	local_supplies=0.0 
 }

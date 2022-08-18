@@ -2,11 +2,11 @@
 state={
 	id=356
 	name="STATE_356" # Kastamonu
-	manpower = 860589
-	state_category = rural
+	manpower = 1
+	state_category = wasteland
 
 	history={
-		owner = TUR
+		owner = ZXX
 		victory_points = {
 			6938 10
 		}
@@ -19,7 +19,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = TUR
+		add_core_of = ZXX
 	}
 
 	provinces={

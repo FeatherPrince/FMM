@@ -1,10 +1,1 @@
-[03:07:00][resistance.cpp:388]: set override garrison strength for state with invalid Data = 353
-[03:07:00][state_effect_implementation.cpp:1792]: history/countries/TUR - Turkey.txt:166: set_garrison_strength No country occupation data
-[03:07:00][resistance.cpp:388]: set override garrison strength for state with invalid Data = 350
-[03:07:00][state_effect_implementation.cpp:1792]: history/countries/TUR - Turkey.txt:173: set_garrison_strength No country occupation data
-[03:07:00][resistance.cpp:388]: set override garrison strength for state with invalid Data = 352
-[03:07:00][state_effect_implementation.cpp:1792]: history/countries/TUR - Turkey.txt:180: set_garrison_strength No country occupation data
-[03:07:00][resistance.cpp:388]: set override garrison strength for state with invalid Data = 800
-[03:07:00][state_effect_implementation.cpp:1792]: history/countries/TUR - Turkey.txt:187: set_garrison_strength No country occupation data
-[03:07:45][gamestate.cpp:5826]: 327 -  Manila has too many buildings : -2
-[03:11:42][ConsoleCmdImpl.cpp:5901]: ======== show errors from console ========
+[06:19:21][persistent.cpp:48]: Error: "Prio is already set for focus tree filter focus_tree: focus_tree, near line: 3" in file: "common/national_focus/BBAMM_ZZX.txt" near line: 27

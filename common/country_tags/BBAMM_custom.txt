@@ -1,0 +1,3 @@
+ZZZ	= "countries/ZZZ.txt" # rebels
+ZZX	= "countries/ZZX.txt" # america
+ZXX	= "countries/ZXX.txt" # anatolia

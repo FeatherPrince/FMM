@@ -1,0 +1,20 @@
+﻿focus_tree = {
+	id = BBAMM_ZZX
+	
+	country = {
+		factor = 1
+		modifier = {
+			add = 10
+			tag = ZZX
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+
+#	initial_show_position = {
+#		focus = ZZX_the_montreux_convention
+#	}
+
+
+}

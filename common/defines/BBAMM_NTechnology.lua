@@ -1,0 +1,11 @@
+--NDefines.NTechnology.MAX_SUBTECHS = 3;								-- Max number of sub technologies a technology can have.
+--NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 30.0;				-- Base amount of research points a country can save per slot.
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 10;				--default 2-- Base year ahead penalty
+--NDefines.NTechnology.BASE_TECH_COST = 100;							-- Base cost for a tech. multiplied with tech cost and ahead of time penalties
+--NDefines.NTechnology.MAX_TECH_SHARING_BONUS = 0.5; 					-- Max technology sharing bonus that can be applied instantly
+--NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0.2;			-- License production tech bonus
+--NDefines.NTechnology.DEFAULT_XP_UNLOCK_RESEARCH_COST = 0;			-- default xp cost of a research to unlock directly
+--NDefines.NTechnology.DEFAULT_XP_BOOST_RESEARCH_COST = 0;				-- default xp cost of a research to speed up the process
+--NDefines.NTechnology.DEFAULT_XP_BOOST_RESEARCH_BONUS = 0;			-- default boost research bonus gained when xp is used to research an item
+--NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.1;						-- research speed can't go below this value
+--NDefines.NTechnology.USE_BONUS_REGRET_TIMER = 3;						-- Number of days the player has to regret using a limited tech bonus

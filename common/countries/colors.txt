@@ -819,3 +819,7 @@ ZZX = {
 	color = rgb { 104 152 83 }
 	color_ui = rgb { 135 198 108 }
 }
+ZXX = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
