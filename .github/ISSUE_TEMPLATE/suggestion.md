@@ -1,7 +1,7 @@
 ---
 name: Suggestion
 about: Suggest an idea for this project
-title: Sugestion
+title: Suggestion
 labels: Suggestion
 assignees: FeatherPrince
 
