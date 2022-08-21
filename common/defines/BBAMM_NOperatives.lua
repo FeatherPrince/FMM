@@ -40,8 +40,8 @@ NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 10;					--default 15-- The
 --NDefines.NOperatives.INTEL_NETWORK_SUB_NETWORK_STRENGTH_TO_DETECTION_CHANCE_FACTOR = 0.1;	-- multiplied to the network strength (a value in range [0; 100]
 --NDefines.NOperatives.INTEL_NETWORK_SUB_NETWORK_NATIONAL_COVERAGE_TO_DETECTION_CHANCE_FACTOR = 3.0;	-- multiplied to the contribution to the national coverage of the sub network (a value in range [0; 1])
 --NDefines.NOperatives.INTEL_NETWORK_DETECTION_GLOBAL_FACTOR = 0.01;				-- global factor multiplied to the detection chance before it is multiplied a dice roll in the range [0;1000)
-NDefines.NOperatives.BUILD_INTEL_NETWORK_DAILY_XP_GAIN = 2;							--default 1
-NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 1;							--default 0
+NDefines.NOperatives.BUILD_INTEL_NETWORK_DAILY_XP_GAIN = 5;							--default 1
+NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 2;							--default 0
 	OPERATIVE_MISSION_DETECTION_CHANCE_FACTOR = {
 		-- Factor multiplied to the detection chance of an agent on mission before the offsets
 		0.0, -- NoMission
@@ -52,7 +52,7 @@ NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 1;							--default 0
 		3.0, -- BoostIdeology
 		0.1, -- ControlTrade
 		0.1, -- DiplomaticPressure
-		3.0, -- Propaganda
+		5.0, -- Propaganda			--default 3.0
 	};
 
 	-- used for calculating how many operatives will a spy master gain from its faction members
@@ -76,12 +76,12 @@ NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 1;							--default 0
 --NDefines.NOperatives.COUNTER_INTELLIGENCE_TO_DEFENSE_DIVISOR = 1.0;				-- see above
 --NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 0.112;
 --NDefines.NOperatives.BOOST_IDEOLOGY_NATIONAL_COVERAGE_FACTOR = 1.0;				-- used to compute the drift factor as follow: BASE * SUB_NETWORK_NC * BOOST_IDEOLOGY_DEFENSE_FACTOR
---NDefines.NOperatives.BOOST_IDEOLOGY_MAX_DRIFT_BY_OPERATIVE = 0.25;				-- the maximum drift an operative can cause; a negative value means no maximum
---NDefines.NOperatives.BOOST_IDEOLOGY_DRIFT_STACKING_FACTOR = 0.5;				-- multiplied to the drift of an operative for each operative after the first one; with the greatest drift. So if we have the following drift values [ 0.1; 0.3; 0.2 ]; the factor is applied twice for the lowest value and once for the 2nd lowest one as such : [ 0.3; 0.2 * D; 0.1 * D * D ] and then the result is summed up to give the final drift value.
+NDefines.NOperatives.BOOST_IDEOLOGY_MAX_DRIFT_BY_OPERATIVE = 0.0;				-- the maximum drift an operative can cause; a negative value means no maximum
+NDefines.NOperatives.BOOST_IDEOLOGY_DRIFT_STACKING_FACTOR = 0.0;				-- multiplied to the drift of an operative for each operative after the first one; with the greatest drift. So if we have the following drift values [ 0.1; 0.3; 0.2 ]; the factor is applied twice for the lowest value and once for the 2nd lowest one as such : [ 0.3; 0.2 * D; 0.1 * D * D ] and then the result is summed up to give the final drift value.
 --NDefines.NOperatives.BOOST_IDEOLOGY_DEFENSE_FACTOR = 0.2;					-- multiplied to the target's defense to get the amount of drift to remove from each operative's drift
 --NDefines.NOperatives.BOOST_IDEOLOGY_DAILY_XP_GAIN = 0.274;
 --NDefines.NOperatives.OPERATIVE_BASE_INTEL_AGENCY_DEFENSE = 1.0;				-- Base amount of intel agency defense contributed by an operative on counter_intelligence mission
---NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0.1;					-- Base amount of daily ideology drift provoked by an operative
+NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0.0;					-- Base amount of daily ideology drift provoked by an operative
 --NDefines.NOperatives.OPERATIVE_BASE_PROPAGANDA_POWER = 0.0005;					-- Base amount of daily war support and stability change when an operative is assigned to propaganda
 --NDefines.NOperatives.PROPAGANDA_SUB_NETWORK_STRENGTH_FACTOR = 1.0;				-- Multiplied to the network strength before being multiplied to the Stability/WarSupport drift caused by an operative
 --NDefines.NOperatives.PROPAGANDA_DEFENSE_FACTOR = 0.01;					-- Multiplied to the target's defense before being subtracted from the Stability/WarSupport drift caused by an operative
