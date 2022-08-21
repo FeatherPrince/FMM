@@ -1,0 +1,187 @@
+on_actions = {
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = HOL
+					}
+				}
+				FROM = {
+					annex_country = { target = BEL transfer_troops = yes }
+					annex_country = { target = LUX transfer_troops = yes }
+					add_state_core = 6
+					add_state_core = 34
+					add_state_core = 8
+				}
+				BEL = {
+					remove_state_core = 6
+					remove_state_core = 34
+				}
+				LUX = {
+					remove_state_core = 8
+				}
+			}
+		}	
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = BEL
+					}
+				}
+				HOL = {
+					annex_country = { target = BEL transfer_troops = yes }
+					annex_country = { target = LUX transfer_troops = yes }
+					add_state_core = 6
+					add_state_core = 34
+					add_state_core = 8
+				}
+				BEL = {
+					remove_state_core = 6
+					remove_state_core = 34
+				}
+				LUX = {
+					remove_state_core = 8
+				}
+			}
+		}	
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = LUX
+					}
+				}
+				HOL = {
+					annex_country = { target = BEL transfer_troops = yes }
+					annex_country = { target = LUX transfer_troops = yes }
+					add_state_core = 6
+					add_state_core = 34
+					add_state_core = 8
+				}
+				BEL = {
+					remove_state_core = 6
+					remove_state_core = 34
+				}
+				LUX = {
+					remove_state_core = 8
+				}
+			}
+		}	
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = DEN
+					}
+				}
+				GER = {
+					annex_country = { target = DEN }
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = NOR
+					}
+				}
+				GER = {
+					annex_country = { target = NOR }
+				}
+			}
+		}	
+	}
+	#on_capitulation_immediate = {
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				FROM = {
+	#					original_tag = ETH
+	#				}
+	#			}
+	#			ITA = {
+	#				annex_country = { target = ETH }
+	#			}
+	#		}
+	#	}	
+	#}
+	#on_capitulation_immediate = {
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				FROM = {
+	#					original_tag = CHI
+	#				}
+	#			}
+	#			JAP = {
+	#				annex_country = { target = CHI }
+	#			}
+	#		}
+	#	}	
+	#}
+	#on_capitulation = {
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				SOV = {
+	#					has_war_together_with = POL
+	#				}
+	#			}
+	#			white_peace = {
+	#			    tag = ENG
+	#				tag = FRA
+	#				tag = ENG
+	#				tag = ENG
+	#			    message = EXAMPLE
+	#			}
+	#		}
+	#	}	
+	#}
+	on_startup = {
+		effect ={
+			JAP = {
+				
+			}
+			every_state = {
+				limit = {
+					is_core_of = MAN
+				}
+				add_compliance = 70
+			}
+		
+		}
+	}
+	on_startup = {
+		effect ={
+			JAP = {
+				annex_country = { target = MEN transfer_troops = yes }
+				annex_country = { target = MAN transfer_troops = yes }
+			}
+			every_state = {
+				limit = {
+					is_core_of = MEN
+				}	
+				add_compliance = 70
+				remove_core_of = MEN
+			}
+			every_state = {
+				limit = {
+					is_core_of = MAN
+				}
+				add_compliance = 70
+				remove_core_of = MAN
+			}
+		}
+	}
+}

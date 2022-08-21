@@ -1,0 +1,13 @@
+--NDefines.NTrade.DISTANCE_TRADE_FACTOR = -0.02,				-- Trade factor is modified by distance times this
+--NDefines.NTrade.RELATION_TRADE_FACTOR = 1,					-- Trade factor is modified by Opinion value times this
+--NDefines.NTrade.ALLOW_TRADE_CUT_OFF = 0,					-- If trade factor is less than this, no trade will be allowed
+--NDefines.NTrade.MONTH_TRADE_FACTOR = 2,						-- Each month a trade gets this much boost to it's trade factor
+--NDefines.NTrade.MAX_MONTH_TRADE_FACTOR = 50,				-- This is the maximum bonus that can be gained from time
+--NDefines.NTrade.BASE_TRADE_FACTOR = 150,					-- This is the base trade factor
+--NDefines.NTrade.PUPPET_MASTER_TRADE_FACTOR = 400,			-- This is priority for puppet master
+--NDefines.NTrade.PUPPET_TRADE_FACTOR = 0,					-- This is unpriority for puppets
+--NDefines.NTrade.BASE_LAND_TRADE_RANGE = 1000,
+--NDefines.NTrade.PARTY_SUPPORT_TRADE_FACTOR = 50,			-- Trade factor bonus at the other side having 100 % party popularity for my party
+--NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR_THRESHOLD = 0.5,	-- What percentage of resources has to be sold to the buyer for the anti-monopoly factor to take effect
+--NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -100,			-- This is added to the factor value when anti-monopoly threshold is exceeded
+--NDefines.NTrade.NAVAL_ROUTE_ACCESS_AVOID_COST_MULT = 1,	-- Naval pathfinding should avoid certain regions that you mark. High "cost multiplier" will make it less willingly go through a specific region.

@@ -1,6 +1,7 @@
 state={
 	id=604
 	name="STATE_604"
+	impassable = yes
 
 	history={
 		owner = CHI
