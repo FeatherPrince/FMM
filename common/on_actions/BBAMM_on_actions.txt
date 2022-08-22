@@ -74,13 +74,78 @@ on_actions = {
 			}
 		}	
 	}
+#	on_capitulation = {
+#		effect = {
+#			if = {
+#				limit = {
+#					FROM = {
+#						original_tag = DEN
+#					}
+#				}
+#				GER = {
+#					set_state_owner = 99
+#					set_state_owner = 37
+#				}
+#				ENG = {
+#					transfer_state = 337
+#					transfer_state = 100
+#					transfer_state = 101
+#				}
+#			}
+#		}
+#	}
+#	on_capitulation = {
+#		effect = {
+#			if = {
+#				limit = {	
+#					ROOT = {				
+#					original_tag = YUG
+#					}				
+#				}
+#				ITA = {
+#					annex_country = { target = YUG }
+#				}
+#				HUN = {
+#					transfer_state = 45
+#					transfer_state = 764
+#				}
+#				BUL = {
+#					transfer_state = 803
+#					transfer_state = 106
+#				}
+#			}
+#		}
+#	}
+#	on_capitulation = {
+#		effect = {
+#			if = {
+#				limit = {	
+#					ROOT = {				
+#					original_tag = GRE
+#					}				
+#				}
+#				ITA = {
+#					annex_country = { target = GRE }
+#				}
+#				BUL = {
+#					transfer_state = 184
+#					transfer_state = 731
+#				}
+#			}
+#		}
+#	}
 	on_capitulation = {
 		effect = {
 			if = {
-				limit = {
-					FROM = {
-						original_tag = DEN
-					}
+				limit = {	
+					ROOT = {				
+					original_tag = DEN
+					}				
+				}
+				ENG = {
+					transfer_state = 100
+					transfer_state = 101
+					transfer_state = 337
 				}
 				GER = {
 					annex_country = { target = DEN }
@@ -88,13 +153,21 @@ on_actions = {
 			}
 		}
 	}
+#	on_startup = {
+#		effect ={
+#			ENG = {
+#				transfer_state = 100
+#				transfer_state = 101
+#			}
+#		}
+#	}
 	on_capitulation = {
 		effect = {
 			if = {
-				limit = {
-					FROM = {
-						original_tag = NOR
-					}
+				limit = {	
+					ROOT = {				
+					original_tag = NOR	
+					}				
 				}
 				GER = {
 					annex_country = { target = NOR }
