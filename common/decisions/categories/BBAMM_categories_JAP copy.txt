@@ -1,6 +1,6 @@
 BBAMM_japan = {
 
-	icon = hol_prepare_the_inundation_lines
+#	icon = hol_prepare_the_inundation_lines
 	
 	allowed = {
 		original_tag = JAP

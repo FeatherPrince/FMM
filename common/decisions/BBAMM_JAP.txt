@@ -1,4 +1,4 @@
-BBAMM_japan = {
+foreign_influence = {
 	
 	annex_man = {
 
@@ -42,9 +42,11 @@ BBAMM_japan = {
 				limit = {
 					is_core_of = MAN
 				}
-				add_compliance = 5
+				add_compliance = 70
 				remove_core_of = MAN
 			}						
 		}
 	}
+
+	
 }
