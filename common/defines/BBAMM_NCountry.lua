@@ -77,7 +77,7 @@
 --NDefines.NCountry.PARADROP_AIR_SUPERIORITY_RATIO = 0.7;			-- Min ratio of air superiority for paradropping
 --NDefines.NCountry.STATE_VALUE_BUILDING_SLOTS_MULT = 4.0;			-- The Value of each building slot in a state ( Value is used to determine costs in peace conference and PP cost to occupy )
 --NDefines.NCountry.STATE_OCCUPATION_COST_MULTIPLIER = 0.01;		-- Multiplier for state value to PP cost for occupation
-NDefines.NCountry.STATE_VALUE_NON_CORE_STATE_FRACTION = 1;		--default   0.5--If a state is not a core we assume we will get 50% of the factory slots
+NDefines.NCountry.STATE_VALUE_NON_CORE_STATE_FRACTION = 1.0;		--default   0.5--If a state is not a core we assume we will get 50% of the factory slots
 --NDefines.NCountry.INVASION_REPORT_EXPERATION_DAYS = 30;			-- Invasion experation days
 --NDefines.NCountry.MIN_FOCUSES_FOR_CONTINUOUS = 10;				-- Focuses needed to unlock continuous focuses
 --NDefines.NCountry.AUTONOMOUS_TOTAL_SCORE = 5000;					-- Total score for autonomous scale
