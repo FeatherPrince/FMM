@@ -365,7 +365,7 @@ adjacency_rule =
 
 adjacency_rule =
 {
-	name = "Atlantikwall"
+	name = "ATLANTIKWALL"
 
 	contested =
 	{
