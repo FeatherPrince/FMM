@@ -239,40 +239,28 @@ on_actions = {
 	#		}
 	#	}	
 	#}
-	on_startup = {
-		effect ={
-			JAP = {
-				
-			}
-			every_state = {
-				limit = {
-					is_core_of = MAN
-				}
-				add_compliance = 70
-			}
-		
-		}
-	}
-	on_startup = {
-		effect ={
-			JAP = {
-				annex_country = { target = MEN transfer_troops = yes }
-				annex_country = { target = MAN transfer_troops = yes }
-			}
-			every_state = {
-				limit = {
-					is_core_of = MEN
-				}	
-				add_compliance = 70
-				remove_core_of = MEN
-			}
-			every_state = {
-				limit = {
-					is_core_of = MAN
-				}
-				add_compliance = 70
-				remove_core_of = MAN
-			}
-		}
-	}
+#	on_startup = {
+#		effect ={
+#			JAP = {
+#				annex_country = { target = MEN transfer_troops = yes }
+#				annex_country = { target = MAN transfer_troops = yes }
+#			}
+#			every_state = {
+#				limit = {
+#					is_core_of = MEN
+#				}	
+#			#	add_compliance = 70
+#				add_compliance = 5
+#				remove_core_of = MEN
+#			}
+#			every_state = {
+#				limit = {
+#					is_core_of = MAN
+#				}
+#			#	add_compliance = 70
+#				add_compliance = 5
+#				remove_core_of = MAN
+#			}
+#		}
+#	}
 }
