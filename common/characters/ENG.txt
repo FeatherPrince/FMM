@@ -206,7 +206,7 @@ characters={
 			traits = {
 				army_chief_maneuver_3
 			}
-			cost = 200
+			#cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -234,7 +234,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 150
+			#cost = 150
 			slot = theorist
 			idea_token = bernard_montgomery
 			ledger = army
@@ -283,7 +283,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -422,7 +422,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = harold_alexander
 			ledger = army
@@ -575,7 +575,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -731,7 +731,7 @@ characters={
 			traits = {
 				army_regrouping_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -805,7 +805,7 @@ characters={
 			traits = {
 				navy_screen_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 0.700
 			}
@@ -841,7 +841,7 @@ characters={
 			traits = {
 				navy_chief_naval_aviation_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 0.500
 			}
@@ -1006,7 +1006,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = ENG_raymond_briggs
 			ledger = army
@@ -1033,7 +1033,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 150
+			#cost = 150
 			slot = theorist
 			idea_token = james_somerville
 			ledger = navy
@@ -1060,7 +1060,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = tom_phillips
 			ledger = navy
@@ -1079,7 +1079,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = hugh_dowding
 			ledger = air
@@ -1100,7 +1100,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 150
+			#cost = 150
 			slot = theorist
 			idea_token = arthur_harris
 			ledger = air
@@ -1122,7 +1122,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = james_chadwick
 			ledger = army
@@ -1146,7 +1146,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = frank_whittle
 			ledger = air
@@ -1170,7 +1170,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 200
+			#cost = 200
 			slot = theorist
 			idea_token = ENG_jfc_fuller
 			ledger = army
@@ -1199,7 +1199,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = ENG_random_communist_minister_14
 			ledger = air
@@ -1225,7 +1225,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = ENG_random_communist_minister_15
 			ledger = army
@@ -1265,7 +1265,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -1293,7 +1293,7 @@ characters={
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1316,7 +1316,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_1
 			}
-			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1342,7 +1342,7 @@ characters={
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1365,7 +1365,7 @@ characters={
 			traits = {
 				air_chief_night_operations_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1388,7 +1388,7 @@ characters={
 			traits = {
 				air_chief_safety_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1420,7 +1420,7 @@ characters={
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -1444,7 +1444,7 @@ characters={
 			traits = {
 				air_air_superiority_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1468,7 +1468,7 @@ characters={
 			traits = {
 				air_bomber_interception_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1492,7 +1492,7 @@ characters={
 			traits = {
 				air_naval_strike_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1521,7 +1521,7 @@ characters={
 			traits = {
 				navy_amphibious_assault_3
 			}
-			cost = 200
+			#cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1545,7 +1545,7 @@ characters={
 			traits = {
 				navy_submarine_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1572,7 +1572,7 @@ characters={
 			traits = {
 				army_commando_3
 			}
-			cost = 200
+			#cost = 200
 			ai_will_do = {
 				factor = 0.200
 			}

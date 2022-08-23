@@ -51,7 +51,7 @@ characters={
 			}
 		}
 		advisor={
-#			cost = 150
+			#cost = 150
 			slot = theorist
 			idea_token = tomoyuki_yamashita
 			ledger = army
@@ -83,7 +83,7 @@ characters={
 			}
 		}
 		advisor={
-#			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = hisaichi_terauchi
 			ledger = army
@@ -124,7 +124,7 @@ characters={
 			traits = {
 				army_concealment_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -216,7 +216,7 @@ characters={
 			traits = {
 				army_infantry_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 3.000
 				modifier = {
@@ -353,7 +353,7 @@ characters={
 			traits = {
 				air_chief_all_weather_1
 			}
-#			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -618,7 +618,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 3.000
 			}
@@ -684,7 +684,7 @@ characters={
 			}
 		}
 		advisor={
-#			cost = 150
+			#cost = 150
 			slot = theorist
 			idea_token = isoroku_yamamoto
 			ledger = navy
@@ -823,7 +823,7 @@ characters={
 			traits = {
 				navy_capital_ship_1
 			}
-#			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -952,7 +952,7 @@ characters={
 			}
 		}
 		advisor={
-#		cost = 100
+		#cost = 100
 		slot = theorist
 		idea_token = minoru_genda
 		ledger = navy
@@ -971,7 +971,7 @@ characters={
 			}
 		}
 		advisor={
-#			cost = 150
+			#cost = 150
 			slot = theorist
 			idea_token = yoshitoshi_tokugawa
 			ledger = air
@@ -992,7 +992,7 @@ characters={
 			}
 		}
 		advisor={
-#			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = hino_kumazo
 			ledger = air
@@ -1011,7 +1011,7 @@ characters={
 			}
 		}
 		advisor={
-#			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = yoshio_nishina
 			ledger = army
@@ -1035,7 +1035,7 @@ characters={
 			}
 		}
 		advisor={
-#			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = hideo_itokawa
 			ledger = air
@@ -1070,7 +1070,7 @@ characters={
 			traits = {
 				army_chief_offensive_1
 			}
-#			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1096,7 +1096,7 @@ characters={
 			traits = {
 				army_chief_drill_3
 			}
-#			cost = 200
+			#cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1119,7 +1119,7 @@ characters={
 			traits = {
 				army_chief_morale_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1144,7 +1144,7 @@ characters={
 			traits = {
 				navy_chief_naval_aviation_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1167,7 +1167,7 @@ characters={
 			traits = {
 				navy_chief_commerce_raiding_1
 			}
-#			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1190,7 +1190,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1218,7 +1218,7 @@ characters={
 			traits = {
 				air_chief_night_operations_1
 			}
-#			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1241,7 +1241,7 @@ characters={
 			traits = {
 				air_chief_ground_support_1
 			}
-#			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1276,7 +1276,7 @@ characters={
 			traits = {
 				air_tactical_bombing_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1300,7 +1300,7 @@ characters={
 			traits = {
 				air_naval_strike_1
 			}
-#			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1324,7 +1324,7 @@ characters={
 			traits = {
 				air_air_combat_training_3
 			}
-#			cost = 200
+			#cost = 200
 			ai_will_do = {
 				factor = 0.800
 			}
@@ -1348,7 +1348,7 @@ characters={
 			traits = {
 				navy_naval_air_defense_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1372,7 +1372,7 @@ characters={
 			traits = {
 				navy_carrier_2
 			}
-#			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}

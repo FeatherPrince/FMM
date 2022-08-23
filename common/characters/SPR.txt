@@ -202,7 +202,7 @@ characters={
 				traits = {
 					army_chief_maneuver_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -276,7 +276,7 @@ characters={
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -292,7 +292,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = SPA_emilio_herrera
 			ledger = air
@@ -469,7 +469,7 @@ characters={
 				}
 			}
 			traits = { army_logistics_1 }
-			cost =  50
+			#cost =  50
 		}
 		
 		corps_commander={
@@ -584,7 +584,7 @@ characters={
 				traits = {
 					army_chief_offensive_3
 				}
-				cost = 200
+				#cost = 200
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -677,7 +677,7 @@ characters={
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				#cost = 100
 			}
 			
 			field_marshal={
@@ -728,7 +728,7 @@ characters={
 				traits = {
 					army_chief_offensive_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -774,7 +774,7 @@ characters={
 				traits = {
 					army_chief_offensive_2
 				}
-				cost = 100
+				#cost = 100
 			}
 
 			corps_commander={
@@ -825,7 +825,7 @@ characters={
 				traits = {
 					air_chief_reform_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -860,7 +860,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -880,7 +880,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 100
+				#cost = 100
 				slot = theorist
 				idea_token = SPA_agustin_munoz_grandes
 				ledger = army
@@ -946,7 +946,7 @@ characters={
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -967,7 +967,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 100
+				#cost = 100
 				slot = theorist
 				idea_token = SPA_jose_enrique_varela
 				ledger = army
@@ -1046,7 +1046,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 100
+				#cost = 100
 				slot = theorist
 				idea_token = SPA_jose_enrique_varela
 				ledger = army
@@ -1087,7 +1087,7 @@ characters={
 				slot = high_command
 				idea_token = SPA_miguel_cabanellas
 				ledger = army
-				cost = 100
+				#cost = 100
 				allowed = {
 					has_dlc = "La Resistance"
 					original_tag = SPR
@@ -1250,7 +1250,7 @@ characters={
 				traits = {
 					navy_screen_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -1288,7 +1288,7 @@ characters={
 				traits = {
 					navy_chief_decisive_battle_2
 				}
-				cost = 100
+				#cost = 100
 			}
 			
 			navy_leader={
@@ -1383,7 +1383,7 @@ characters={
 			traits = {
 				army_chief_organizational_2
 			}
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -1435,7 +1435,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -1472,7 +1472,7 @@ characters={
 			traits = {
 				army_chief_drill_2
 			}
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -1513,7 +1513,7 @@ characters={
 				traits = {
 					air_chief_ground_support_2
 				}
-				cost = 100
+				#cost = 100
 			}
 		}
 		instance = {
@@ -1546,7 +1546,7 @@ characters={
 				traits = {
 					air_air_combat_training_3
 				}
-				cost = 200
+				#cost = 200
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -1587,7 +1587,7 @@ characters={
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -1622,7 +1622,7 @@ characters={
 			traits = {
 				army_armored_2
 			}
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -1659,7 +1659,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -1693,7 +1693,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1737,7 +1737,7 @@ characters={
 				traits = {
 					army_entrenchment_2
 				}
-				cost = 100
+				#cost = 100
 			}
 		}
 		instance = {
@@ -1769,7 +1769,7 @@ characters={
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -1789,7 +1789,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 100
+				#cost = 100
 				slot = theorist
 				idea_token = SPR_nicolas_molero
 				ledger = army
@@ -1827,7 +1827,7 @@ characters={
 				}
 			}
 			advisor={
-				cost = 100
+				#cost = 100
 				slot = theorist
 				idea_token = SPR_nicolas_molero
 				ledger = army
@@ -1881,7 +1881,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-				cost = 100
+				#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1914,7 +1914,7 @@ characters={
 			traits = {
 				navy_chief_reform_2
 			}
-				cost = 100
+				#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1929,7 +1929,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = SPR_andres_saborit_colomer
 			ledger = military
@@ -1965,7 +1965,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = SPR_felipe_diaz_sandino
 			ledger = air
@@ -1998,7 +1998,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = SPR_andres_nin
 			ledger = army
@@ -2032,7 +2032,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = SPR_council_of_theorists
 			ledger = military
@@ -2086,7 +2086,7 @@ characters={
 				}
 			}
 			traits = { army_chief_morale_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2125,7 +2125,7 @@ characters={
 				}
 			}
 			traits = { army_chief_defensive_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2159,7 +2159,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2193,7 +2193,7 @@ characters={
 			traits = {
 				air_strategic_bombing_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2232,7 +2232,7 @@ characters={
 				}
 			}
 			traits = { army_chief_offensive_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2267,7 +2267,7 @@ characters={
 				}
 			}
 			traits = { army_chief_defensive_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2302,7 +2302,7 @@ characters={
 				}
 			}
 			traits = { army_chief_offensive_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2337,7 +2337,7 @@ characters={
 				}
 			}
 			traits = { army_chief_organizational_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2367,7 +2367,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2405,7 +2405,7 @@ characters={
 			traits = {
 				army_concealment_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -2447,7 +2447,7 @@ characters={
 					}
 				}
 				traits = { air_chief_safety_2 }
-				cost = 100
+				#cost = 100
 			}
 		}
 		instance = {
@@ -2483,7 +2483,7 @@ characters={
 				traits = {
 					air_chief_safety_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -2526,7 +2526,7 @@ characters={
 					}
 				}
 				traits = { air_chief_ground_support_2 }
-				cost = 100
+				#cost = 100
 			}
 		}
 		instance = {
@@ -2562,7 +2562,7 @@ characters={
 				traits = {
 					air_chief_ground_support_3
 				}
-				cost = 200
+				#cost = 200
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -2602,7 +2602,7 @@ characters={
 				}
 			}
 			traits = { air_chief_reform_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2637,7 +2637,7 @@ characters={
 				}
 			}
 			traits = { air_chief_safety_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2672,7 +2672,7 @@ characters={
 				}
 			}
 			traits = { air_chief_all_weather_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2711,7 +2711,7 @@ characters={
 					}
 				}
 				traits = { navy_screen_2 }
-				cost = 100
+				#cost = 100
 			}
 		}
 		instance = {
@@ -2747,7 +2747,7 @@ characters={
 				traits = {
 					navy_chief_naval_aviation_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -2785,7 +2785,7 @@ characters={
 				}
 			}
 			traits = { navy_chief_maneuver_1 }
-			cost =  50
+			#cost =  50
 		}
 	}
 
@@ -2820,7 +2820,7 @@ characters={
 				}
 			}
 			traits = { navy_chief_commerce_raiding_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2855,7 +2855,7 @@ characters={
 				}
 			}
 			traits = { navy_chief_reform_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2891,7 +2891,7 @@ characters={
 				}
 			}
 			traits = { army_artillery_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2931,7 +2931,7 @@ characters={
 				}
 			}
 			traits = { army_infantry_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -2967,7 +2967,7 @@ characters={
 				}
 			}
 			traits = { army_entrenchment_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3007,7 +3007,7 @@ characters={
 					}
 				}
 				traits = { navy_screen_2 }
-				cost = 100
+				#cost = 100
 			}
 		}
 		instance = {
@@ -3044,7 +3044,7 @@ characters={
 				traits = {
 					navy_fleet_logistics_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -3083,7 +3083,7 @@ characters={
 				}
 			}
 			traits = { army_entrenchment_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3118,7 +3118,7 @@ characters={
 				}
 			}
 			traits = { army_regrouping_1 }
-			cost =  50
+			#cost =  50
 		}
 	}
 
@@ -3154,7 +3154,7 @@ characters={
 				}
 			}
 			traits = { army_regrouping_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3188,7 +3188,7 @@ characters={
 				}
 			}
 			traits = { army_logistics_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3223,7 +3223,7 @@ characters={
 				}
 			}
 			traits = { army_infantry_3 }
-			cost = 200
+			#cost = 200
 		}
 	}
 
@@ -3258,7 +3258,7 @@ characters={
 				}
 			}
 			traits = { army_regrouping_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3293,7 +3293,7 @@ characters={
 				}
 			}
 			traits = { army_concealment_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3328,7 +3328,7 @@ characters={
 				}
 			}
 			traits = { air_naval_strike_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3363,7 +3363,7 @@ characters={
 				}
 			}
 			traits = { air_close_air_support_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3398,7 +3398,7 @@ characters={
 				}
 			}
 			traits = { navy_fleet_logistics_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 
@@ -3433,7 +3433,7 @@ characters={
 				}
 			}
 			traits = { navy_anti_submarine_2 }
-			cost = 100
+			#cost = 100
 		}
 	}
 

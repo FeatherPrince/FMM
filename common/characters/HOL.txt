@@ -168,7 +168,7 @@ characters={
 				traits = {
 					army_chief_maneuver_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -200,7 +200,7 @@ characters={
 				traits = {
 					air_chief_night_operations_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -224,7 +224,7 @@ characters={
 			legacy_id=-1
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = HOL_godfried_van_voorst_tot_voorst
 			ledger = army
@@ -249,7 +249,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = HOL_johan_furstner
 			ledger = navy
@@ -297,7 +297,7 @@ characters={
 				traits = {
 					navy_chief_commerce_raiding_3
 				}
-				cost = 200
+				#cost = 200
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -329,7 +329,7 @@ characters={
 				traits = {
 					navy_chief_decisive_battle_1
 				}
-				cost =  50
+				#cost =  50
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -347,7 +347,7 @@ characters={
 				traits = {
 					air_naval_strike_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -370,7 +370,7 @@ characters={
 				traits = {
 					army_cavalry_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -393,7 +393,7 @@ characters={
 				traits = {
 					army_chief_morale_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -417,7 +417,7 @@ characters={
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -439,7 +439,7 @@ characters={
 				traits = {
 					air_chief_reform_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -465,7 +465,7 @@ characters={
 				traits = {
 					army_chief_offensive_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -495,7 +495,7 @@ characters={
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -519,7 +519,7 @@ characters={
 				traits = {
 					army_concealment_1
 				}
-				cost =  50
+				#cost =  50
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -533,7 +533,7 @@ characters={
 	}
 	HOL_marius_raaijmakers={
 		advisor={
-			cost = 100
+			#cost = 100
 			
 			slot = theorist
 			idea_token = HOL_marius_raaijmakers

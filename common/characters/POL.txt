@@ -213,7 +213,7 @@ characters = {
 			}
 		}
 		advisor={	
-			cost = 100
+			#cost = 100
 			slot = political_advisor
 			idea_token = POL_walery_slawek
 			available = {
@@ -346,7 +346,7 @@ characters = {
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = political_advisor
 			idea_token = POL_roman_dmowski
 			allowed = {
@@ -430,7 +430,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = POL_edward_rydz_smigly
 			ledger = army
@@ -668,7 +668,7 @@ characters = {
 			traits = {
 				army_cavalry_1
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -740,7 +740,7 @@ characters = {
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 100
+				#cost = 100
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -814,7 +814,7 @@ characters = {
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -844,7 +844,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = POL_tomislaw_lupaszko
 			ledger = army
@@ -865,7 +865,7 @@ characters = {
 			}
 		}
 		advisor = {
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = POL_wladyslaw_kalkus
 			ledger = air
@@ -927,7 +927,7 @@ characters = {
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -950,7 +950,7 @@ characters = {
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -979,7 +979,7 @@ characters = {
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1003,7 +1003,7 @@ characters = {
 			traits = {
 				army_armored_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1027,7 +1027,7 @@ characters = {
 			traits = {
 				air_air_superiority_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1045,7 +1045,7 @@ characters = {
 		}
 		gender = female
 		advisor = {
-			cost = 100
+			#cost = 100
 			slot = political_advisor
 			idea_token = POL_wanda_wasilewska
 			ledger = army

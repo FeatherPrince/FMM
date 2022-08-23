@@ -222,7 +222,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = HUN_shvoy_kalman
 			ledger = army
@@ -244,7 +244,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			#cost = 100
 			slot = theorist
 			idea_token = HUN_gyorgy_jendrassik
 			ledger = air
@@ -276,7 +276,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -299,7 +299,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -325,7 +325,7 @@ characters={
 			traits = {
 				navy_chief_reform_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -348,7 +348,7 @@ characters={
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -374,7 +374,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -397,7 +397,7 @@ characters={
 			traits = {
 				air_air_combat_training_1
 			}
-			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -424,7 +424,7 @@ characters={
 			traits = {
 				army_armored_1
 			}
-			cost =  50
+			#cost =  50
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -448,7 +448,7 @@ characters={
 			traits = {
 				army_regrouping_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -472,7 +472,7 @@ characters={
 			traits = {
 				air_air_combat_training_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -496,7 +496,7 @@ characters={
 			traits = {
 				army_cavalry_2
 			}
-			cost = 100
+			#cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
