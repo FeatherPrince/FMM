@@ -27,7 +27,8 @@ foreign_influence = {
 		}
 
 		visible = {
-			MAN = { is_ai = yes }			
+			MAN = { is_ai = yes }
+			original_tag = JAP
 		}
 
 		remove_effect = {
