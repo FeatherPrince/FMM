@@ -1274,7 +1274,7 @@ operation_boost_resistance = { ### 8 2/40
 	desc = operation_boost_resistance_desc
 	priority = 8
 	
-	cost_multiplier = 0.25
+	#cost_multiplier = 0.25
 	
 	days = 50
 	network_strength = 35
@@ -1586,7 +1586,7 @@ operation_collaboration_government = { ### 10 2/55
 	network_strength = 50
 	operatives = 2
 	
-	cost_multiplier = 0.25
+	#cost_multiplier = 0.25
 	
 	visible = {
 		network_strength = {
@@ -1812,7 +1812,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 	days = 120
 	network_strength = 35
 	operatives = 3
-	cost_multiplier = 0.05
+	#cost_multiplier = 0.05
 
 	visible = {
 		num_of_operatives > 0
@@ -2371,7 +2371,7 @@ operation_steal_tech_army = { ### 16 3/55
 	days = 120
 	network_strength = 50
 	operatives = 3
-	cost_multiplier = 0.05
+	#cost_multiplier = 0.05
 
 	visible = {
 		num_of_operatives > 1
@@ -2636,7 +2636,7 @@ operation_steal_tech_navy = { ### 17 3/55
 	days = 120
 	network_strength = 50
 	operatives = 3
-	cost_multiplier = 0.05
+	#cost_multiplier = 0.05
 
 	visible = {
 		num_of_operatives > 1
@@ -2858,7 +2858,7 @@ operation_steal_tech_airforce = { ### 18 3/55
 	days = 120
 	network_strength = 50
 	operatives = 3
-	cost_multiplier = 0.05
+	#cost_multiplier = 0.05
 
 	visible = {
 		num_of_operatives > 1
