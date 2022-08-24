@@ -193,6 +193,38 @@ on_actions = {
 			}
 		}	
 	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = HOL	}	
+				}				
+				every_state = {
+					limit = {
+						is_core_of = HOL
+					}
+					remove_core_of = HOL
+					add_core_of = ZZZ
+				}
+			}	
+		}	
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = FRA	}	
+				}				
+				every_state = {
+					limit = {
+						is_core_of = FRA
+					}
+					remove_core_of = FRA
+					add_core_of = ZZZ
+				}
+			}	
+		}	
+	}
 	#on_capitulation_immediate = {
 	#	effect = {
 	#		if = {
