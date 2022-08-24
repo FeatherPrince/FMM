@@ -151,6 +151,7 @@ buildings = {
 		damage_factor = 0.1
 		value = 1
 		infrastructure_construction_effect = yes
+		allied_build = yes
 	}
 
 	synthetic_refinery = {
